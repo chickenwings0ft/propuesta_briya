@@ -112,7 +112,7 @@ export default function PricingSlide() {
         }}>
           <div>
             <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--color-floral)', marginBottom: '0.25rem' }}>
-              🎁 Estrategia completa — los dos servicios
+              Estrategia completa — los dos servicios
             </div>
             <div style={{ fontSize: '0.78rem', color: '#a1a1aa' }}>
               Posicionamiento Web + Redes Sociales trabajando como un solo sistema
