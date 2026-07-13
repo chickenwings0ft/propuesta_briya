@@ -22,11 +22,6 @@ export default function AnalyticsSlide() {
   // Simulated SVG path for GA4 Traffic (Bar chart-like heights)
   const ga4Bars = [40, 55, 45, 70, 65, 85, 80, 100, 120, 110, 130, 150]
 
-  // Simulated SVG paths for GSC (Line charts Clicks/Impressions)
-  // Scaled for a 400x120 viewBox
-  const gscClicksPath = "M0,100 Q40,90 80,85 T160,70 T240,65 T320,40 T400,20"
-  const gscImpPath = "M0,110 Q40,100 80,105 T160,90 T240,75 T320,55 T400,30"
-
   const panelStyle = {
     background: '#ffffff',
     borderRadius: '16px',
@@ -148,94 +143,70 @@ export default function AnalyticsSlide() {
             </div>
           </div>
 
-          {/* GSC DASHBOARD MOCK */}
+          {/* META BUSINESS SUITE MOCK */}
           <div className="reveal" style={{...panelStyle, transform: inView ? 'translateY(0)' : 'translateY(40px)', opacity: inView ? 1 : 0, transition: 'all 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s'}}>
             <div style={headerStyle}>
-              <img src="./logo-gsc.png" alt="GSC" style={{ height: '28px', objectFit: 'contain' }} />
-              <span style={{ fontSize: '1.1rem', fontWeight: 500, color: '#5f6368', letterSpacing: '-0.3px' }}>Google Search Console</span>
+              <img src="/meta-logo.png" alt="Meta" style={{ height: '26px', objectFit: 'contain' }} />
+              <span style={{ fontSize: '1.1rem', fontWeight: 500, color: '#5f6368', letterSpacing: '-0.3px' }}>Meta Business Suite</span>
+              <span style={{ marginLeft: 'auto', fontSize: '0.65rem', fontWeight: 700, color: '#15803d', background: 'rgba(34,197,94,0.1)', padding: '3px 10px', borderRadius: '20px', letterSpacing: '0.05em' }}>3 ACTIVE ADS</span>
             </div>
-            
+
             <div style={kpiGrid}>
-              <div style={{...kpiBox, borderTop: '4px solid #4285f4'}}>
-                <span style={{ fontSize: '0.75rem', color: '#5f6368', fontWeight: 500 }}>Clics totales</span>
-                <span style={{ fontSize: '1.6rem', color: '#4285f4', fontWeight: 500 }}>3.45 K</span>
+              <div style={{...kpiBox, borderTop: '4px solid #0668E1'}}>
+                <span style={{ fontSize: '0.75rem', color: '#5f6368', fontWeight: 500 }}>Impressions</span>
+                <span style={{ fontSize: '1.6rem', color: '#0668E1', fontWeight: 500 }}>86.4K</span>
+                <span style={{ fontSize: '0.7rem', color: '#137333', fontWeight: 500 }}>↑ 31.2%</span>
               </div>
-              <div style={{...kpiBox, borderTop: '4px solid #5e35b1'}}>
-                <span style={{ fontSize: '0.75rem', color: '#5f6368', fontWeight: 500 }}>Impresiones totales</span>
-                <span style={{ fontSize: '1.6rem', color: '#5e35b1', fontWeight: 500 }}>124 K</span>
-              </div>
-              <div style={kpiBox}>
-                <span style={{ fontSize: '0.75rem', color: '#5f6368', fontWeight: 500 }}>CTR medio</span>
-                <span style={{ fontSize: '1.6rem', color: '#202124', fontWeight: 400 }}>2.8%</span>
+              <div style={{...kpiBox, borderTop: '4px solid #E1306C'}}>
+                <span style={{ fontSize: '0.75rem', color: '#5f6368', fontWeight: 500 }}>Clicks</span>
+                <span style={{ fontSize: '1.6rem', color: '#E1306C', fontWeight: 500 }}>2,140</span>
+                <span style={{ fontSize: '0.7rem', color: '#137333', fontWeight: 500 }}>↑ 22.7%</span>
               </div>
               <div style={kpiBox}>
-                <span style={{ fontSize: '0.75rem', color: '#5f6368', fontWeight: 500 }}>Posición media</span>
-                <span style={{ fontSize: '1.6rem', color: '#202124', fontWeight: 400 }}>14.2</span>
+                <span style={{ fontSize: '0.75rem', color: '#5f6368', fontWeight: 500 }}>Cost per Click</span>
+                <span style={{ fontSize: '1.6rem', color: '#202124', fontWeight: 400 }}>A$0.62</span>
+                <span style={{ fontSize: '0.7rem', color: '#137333', fontWeight: 500 }}>↓ 9.4%</span>
+              </div>
+              <div style={kpiBox}>
+                <span style={{ fontSize: '0.75rem', color: '#5f6368', fontWeight: 500 }}>Cost per Lead</span>
+                <span style={{ fontSize: '1.6rem', color: '#202124', fontWeight: 400 }}>A$4.80</span>
+                <span style={{ fontSize: '0.7rem', color: '#137333', fontWeight: 500 }}>↓ 12.1%</span>
               </div>
             </div>
 
-            <div style={{ padding: '2rem 1.5rem', flex: 1, position: 'relative' }}>
-              <span style={{ fontSize: '0.85rem', color: '#3c4043', fontWeight: 500, marginBottom: '2rem', display: 'block' }}>Rendimiento en Búsqueda</span>
-              
-              <div style={{ position: 'relative', width: '100%', height: 'calc(100% - 3rem)' }}>
-                {/* Grid lines */}
-                <div style={{ position: 'absolute', inset: 0, borderTop: '1px solid #f1f3f4', borderBottom: '1px solid #f1f3f4' }} />
-                <div style={{ position: 'absolute', top: '50%', width: '100%', borderTop: '1px dashed #f1f3f4' }} />
+            <div style={{ padding: '1.25rem 1.5rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+              <span style={{ fontSize: '0.85rem', color: '#3c4043', fontWeight: 500 }}>Sponsored posts · Last 30 days</span>
 
-                {/* SVG Charts */}
-                <svg viewBox="0 0 400 120" preserveAspectRatio="none" style={{ position: 'absolute', inset: 0, overflow: 'visible', width: '100%', height: '100%' }}>
-                  <defs>
-                    <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#4285f4" stopOpacity="0.2"/>
-                      <stop offset="100%" stopColor="#4285f4" stopOpacity="0"/>
-                    </linearGradient>
-                    <linearGradient id="purpleGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#5e35b1" stopOpacity="0.15"/>
-                      <stop offset="100%" stopColor="#5e35b1" stopOpacity="0"/>
-                    </linearGradient>
-                  </defs>
+              {[
+                { name: 'Before/After — Feed Post', grad: 'linear-gradient(135deg,#5d5d55,#7cc4f5)', conv: 24, perf: '+18%' },
+                { name: 'Soft-Wash Process — Reel', grad: 'linear-gradient(135deg,#0668E1,#38bdf8)', conv: 17, perf: '+32%' },
+                { name: 'Free Quote — Story', grad: 'linear-gradient(135deg,#E1306C,#f5af19)', conv: 9, perf: '+11%' },
+              ].map((c, i) => (
+                <div key={i} style={{
+                  display: 'flex', alignItems: 'center', gap: '0.8rem',
+                  border: '1px solid #f1f3f4', borderRadius: '10px', padding: '0.6rem 0.8rem',
+                  opacity: inView ? 1 : 0, transform: inView ? 'translateX(0)' : 'translateX(20px)',
+                  transition: `all 0.5s cubic-bezier(0.22,1,0.36,1) ${0.4 + i * 0.12}s`
+                }}>
+                  <div style={{ width: '38px', height: '38px', borderRadius: '8px', background: c.grad, flexShrink: 0 }} />
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontSize: '0.78rem', fontWeight: 600, color: '#202124', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{c.name}</div>
+                    <div style={{ fontSize: '0.65rem', color: '#5f6368' }}>Sponsored · Active</div>
+                  </div>
+                  <div style={{ textAlign: 'right' }}>
+                    <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#202124' }}>{c.conv} conversions</div>
+                    <div style={{ fontSize: '0.68rem', fontWeight: 700, color: '#137333' }}>📈 Performance {c.perf}</div>
+                  </div>
+                </div>
+              ))}
 
-                  {/* Impressions (Purple) */}
-                  <path 
-                    d={`M0,120 L0,110 Q40,100 80,105 T160,90 T240,75 T320,55 T400,30 L400,120 Z`} 
-                    fill="url(#purpleGrad)" 
-                    style={{ opacity: inView ? 1 : 0, transition: 'opacity 1s ease 0.6s' }}
-                  />
-                  <path 
-                    d={gscImpPath} 
-                    fill="none" 
-                    stroke="#5e35b1" 
-                    strokeWidth="2.5"
-                    strokeDasharray="600"
-                    strokeDashoffset={inView ? 0 : 600}
-                    style={{ transition: 'stroke-dashoffset 2s cubic-bezier(0.22, 1, 0.36, 1) 0.5s' }}
-                  />
-
-                  {/* Clicks (Blue) */}
-                  <path 
-                    d={`M0,120 L0,100 Q40,90 80,85 T160,70 T240,65 T320,40 T400,20 L400,120 Z`} 
-                    fill="url(#blueGrad)" 
-                    style={{ opacity: inView ? 1 : 0, transition: 'opacity 1s ease 0.8s' }}
-                  />
-                  <path 
-                    d={gscClicksPath} 
-                    fill="none" 
-                    stroke="#4285f4" 
-                    strokeWidth="2.5" 
-                    strokeDasharray="600"
-                    strokeDashoffset={inView ? 0 : 600}
-                    style={{ transition: 'stroke-dashoffset 2s cubic-bezier(0.22, 1, 0.36, 1) 0.7s' }}
-                  />
-                </svg>
-
-                {/* X Axis dates */}
-                <div style={{ position: 'absolute', bottom: '-20px', left: 0, width: '100%', display: 'flex', justifyContent: 'space-between', color: '#80868b', fontSize: '0.65rem' }}>
-                  <span>24 ene</span>
-                  <span>14 mar</span>
-                  <span>2 may</span>
-                  <span>20 jun</span>
-                  <span>8 ago</span>
-                  <span>26 oct</span>
+              {/* Audience targeting */}
+              <div style={{ marginTop: 'auto', paddingTop: '0.75rem', borderTop: '1px solid #f1f3f4' }}>
+                <span style={{ fontSize: '0.7rem', color: '#5f6368', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em', display: 'block', marginBottom: '0.5rem' }}>Audience targeting</span>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {['27+ years', 'Men', 'Gold Coast', 'Homeowners'].map((t, i) => (
+                    <span key={i} style={{ fontSize: '0.7rem', fontWeight: 600, color: '#0668E1', background: 'rgba(6,102,225,0.08)', border: '1px solid rgba(6,102,225,0.2)', borderRadius: '20px', padding: '3px 11px' }}>{t}</span>
+                  ))}
                 </div>
               </div>
             </div>

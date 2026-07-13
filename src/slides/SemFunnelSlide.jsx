@@ -40,15 +40,6 @@ export default function SemFunnelSlide() {
           ))}
         </div>
 
-        <div className="reveal" style={{ marginTop: '1.75rem', background: 'white', border: '1px solid rgba(2,132,199,0.15)', borderLeft: '4px solid var(--color-green)', borderRadius: '10px', padding: '1rem 1.25rem', maxWidth: '760px', margin: '1.75rem auto 0' }}>
-          <div style={{ fontSize: '0.6rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--color-dark)', marginBottom: '0.3rem' }}>
-            Presupuesto inteligente
-          </div>
-          <div style={{ fontSize: '0.8rem', color: 'var(--color-muted)', lineHeight: 1.5 }}>
-            El presupuesto se reparte según el rendimiento real de cada fase: si Google convierte más barato ese mes, recibe más inversión. Revisión y ajuste <strong style={{ color: 'var(--color-dark)' }}>semanal</strong>.
-          </div>
-        </div>
-
       </div>
     </section>
   )

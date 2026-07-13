@@ -7,12 +7,6 @@ const OBJECTIVES = [
   { icon: '🖼️', title: 'Creatividades Antes/Después', desc: 'El formato con mejor rendimiento en anuncios del sector exterior cleaning.' },
 ]
 
-const PLACEMENTS = [
-  { platform: 'Instagram', format: 'Feed + Reels', objective: 'Alcance de marca / Leads', color: '#E1306C' },
-  { platform: 'Facebook', format: 'Feed + Marketplace', objective: 'Comunidad local / Leads', color: '#1877F2' },
-  { platform: 'Instagram + Facebook', format: 'Stories', objective: 'Retargeting rápido', color: '#0668E1' },
-]
-
 export default function MetaAdsSlide() {
   const sectionRef = useRef(null)
   const [inView, setInView] = useState(false)
@@ -83,61 +77,6 @@ export default function MetaAdsSlide() {
           ))}
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1.15fr 0.85fr', gap: '1rem', alignItems: 'stretch' }}>
-
-          {/* Placement table */}
-          <div style={{
-            background: 'var(--color-dark)',
-            borderRadius: '12px',
-            overflow: 'hidden',
-            opacity: inView ? 1 : 0,
-            transition: 'opacity 0.6s ease 0.4s'
-          }}>
-            <div style={{ padding: '0.9rem 1.1rem', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
-              <div style={{ fontSize: '0.6rem', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#6b889e' }}>
-                Ubicaciones de campaña
-              </div>
-            </div>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.72rem' }}>
-              <tbody>
-                {PLACEMENTS.map((p, i) => (
-                  <tr key={i} style={{ borderTop: i === 0 ? 'none' : '1px solid rgba(255,255,255,0.06)' }}>
-                    <td style={{ padding: '0.7rem 1.1rem' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                        <div style={{ width: 6, height: 6, borderRadius: '50%', background: p.color, flexShrink: 0 }} />
-                        <span style={{ color: '#f4f8fb', fontWeight: 600 }}>{p.platform}</span>
-                      </div>
-                    </td>
-                    <td style={{ padding: '0.7rem 0.5rem', color: '#a1b1bd' }}>{p.format}</td>
-                    <td style={{ padding: '0.7rem 1.1rem', color: '#38bdf8', fontWeight: 600, textAlign: 'right' }}>{p.objective}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* Highlight bar */}
-          <div style={{
-            background: 'white',
-            border: '1px solid rgba(6,102,225,0.15)',
-            borderLeft: '4px solid #0668E1',
-            borderRadius: '10px',
-            padding: '1rem 1.1rem',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            opacity: inView ? 1 : 0,
-            transition: 'opacity 0.6s ease 0.55s'
-          }}>
-            <div style={{ fontSize: '0.6rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--color-dark)', marginBottom: '0.3rem' }}>
-              Por qué funciona en este sector
-            </div>
-            <div style={{ fontSize: '0.78rem', color: 'var(--color-muted)', lineHeight: 1.55 }}>
-              El antes/después es el creativo con mayor CTR en limpieza de exteriores: es visual, inmediato y demuestra el resultado sin necesidad de texto.
-            </div>
-          </div>
-
-        </div>
       </div>
     </section>
   )

@@ -35,26 +35,12 @@ export default function InstagramFeedSlide() {
           <div>
             <p className="section-label" style={{ color: 'var(--color-muted)', marginBottom: '0.4rem' }}>09 — Instagram</p>
             <h2 className="section-title reveal" style={{ color: 'var(--color-dark)', lineHeight: 1.05, fontSize: 'clamp(1.8rem, 3.2vw, 2.7rem)', marginBottom: '1rem' }}>
-              El mismo perfil,<br />
-              <span style={{ color: 'var(--color-green)' }}>otra energía.</span>
+              Así se vería una estrategia de<br />
+              <span style={{ color: 'var(--color-green)' }}>Redes Sociales.</span>
             </h2>
-            <p style={{ fontSize: '0.85rem', color: 'var(--color-muted)', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-              Simulación del Instagram de Briya: la misma cuenta con una publicación actual frente a una publicación gestionada con marca, luz y llamada a la acción.
+            <p style={{ fontSize: '0.9rem', color: 'var(--color-muted)', lineHeight: 1.65 }}>
+              Simulación del Instagram de Briya: la misma cuenta con una publicación actual frente a una publicación gestionada desde el administrador de anuncios con marca, luz y llamada a la acción.
             </p>
-
-            <div style={{ background: 'rgba(185,28,28,0.05)', border: '1px solid rgba(185,28,28,0.2)', borderRadius: '10px', padding: '0.85rem 1rem', marginBottom: '0.75rem', opacity: inView ? 1 : 0, transition: 'opacity 0.6s ease 0.3s' }}>
-              <div style={{ fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#b91c1c', marginBottom: '0.25rem' }}>❌ Publicación actual</div>
-              <div style={{ fontSize: '0.76rem', color: 'var(--color-dark)', lineHeight: 1.5, opacity: 0.85 }}>
-                Foto oscura, sin edición ni marca, texto plano y sin hashtags: <strong>9 likes y cero leads</strong>.
-              </div>
-            </div>
-
-            <div style={{ background: 'rgba(21,128,61,0.05)', border: '1px solid rgba(21,128,61,0.2)', borderRadius: '10px', padding: '0.85rem 1rem', opacity: inView ? 1 : 0, transition: 'opacity 0.6s ease 0.45s' }}>
-              <div style={{ fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#15803d', marginBottom: '0.25rem' }}>✅ Publicación gestionada</div>
-              <div style={{ fontSize: '0.76rem', color: 'var(--color-dark)', lineHeight: 1.5, opacity: 0.85 }}>
-                Luz, color de marca, antes/después y CTA directo al presupuesto: <strong>alcance 18.2K · CTR 2.4% · coste por lead €4.80</strong>.
-              </div>
-            </div>
           </div>
 
           {/* RIGHT: IG panel */}

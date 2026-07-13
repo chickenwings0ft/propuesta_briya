@@ -37,9 +37,9 @@ export default function LandingsSlide() {
         <div className="highlight-bar reveal" style={{ marginTop: '2.5rem', background: 'white', border: '1px solid rgba(2, 132, 199, 0.15)' }}>
           <div className="highlight-bar__accent" style={{ background: 'var(--color-dark)' }}></div>
           <div className="highlight-bar__content">
-            <div className="highlight-bar__title" style={{ color: 'var(--color-dark)' }}>10 landings en total</div>
+            <div className="highlight-bar__title" style={{ color: 'var(--color-dark)' }}>Web + Anuncios</div>
             <div className="highlight-bar__text">
-              Cada visita llega a la página exacta de lo que busca y pide presupuesto en un clic.
+              Este trabajo web se complementa con los anuncios de Instagram y Facebook: los anuncios enlazan a estas páginas para pedir presupuesto o contactar.
             </div>
           </div>
         </div>

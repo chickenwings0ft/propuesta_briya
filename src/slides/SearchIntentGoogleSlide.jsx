@@ -8,7 +8,7 @@ export default function SearchIntentGoogleSlide() {
             Búsqueda Tradicional
           </h2>
           <p className="card__body" style={{ fontSize: '1.25rem', maxWidth: '900px', margin: '0 auto', color: 'var(--color-dark)' }}>
-            <strong style={{ display: 'block', marginBottom: '0.5rem', fontSize: '1.4rem' }}>"¿Dónde encontrar una empresa de lavado a presión fiable en Gold Coast?"</strong>
+            <strong style={{ display: 'block', marginBottom: '0.5rem', fontSize: '1.4rem' }}>"Where can I find a reliable pressure washing company on the Gold Coast?"</strong>
             <em style={{ color: 'var(--color-muted)' }}>Aquí el usuario busca opiniones, valoraciones en Google Maps, fotos de trabajos "Antes y Después", servicios ofrecidos y precios estimados.</em>
           </p>
         </div>

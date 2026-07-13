@@ -1,7 +1,7 @@
 export default function HeroSlide() {
   return (
     <section className="hero">
-      <div className="hero__bg-text">SEO</div>
+      <div className="hero__bg-text">MKT</div>
 
       <div className="hero-enter" style={{ position: 'relative', zIndex: 10, marginBottom: '1.5rem' }}>
         <span className="badge badge--dark" style={{ letterSpacing: '0.15em', padding: '0.5rem 1rem' }}>Estrategia de Marketing Digital 2026</span>

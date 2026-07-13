@@ -23,7 +23,7 @@ export default function LocalSeoSlide() {
               <div className="highlight-bar__content">
                 <div className="highlight-bar__title" style={{ color: 'var(--color-dark)' }}>Oportunidad Real</div>
                 <div className="highlight-bar__text" style={{ color: 'var(--color-dark)' }}>
-                  Las búsquedas geolocalizadas como "pressure washing gold coast" o "house washing brisbane" tienen intención de contratación inmediata. Briya debe acaparar el "Local 3-Pack" para capturar llamadas directas.
+                  Quien busca "pressure washing gold coast" quiere contratar ya, y casi todas las llamadas se las llevan los 3 primeros negocios del mapa de Google. Hacemos una gestión plena de la ficha de Google con un posicionamiento orgánico correcto para que Briya esté ahí.
                 </div>
               </div>
             </div>
@@ -32,22 +32,22 @@ export default function LocalSeoSlide() {
               <div className="step">
                 <div className="step__num" style={{ background: 'var(--color-dark)', color: 'var(--color-cream)' }}>01</div>
                 <div className="step__content">
-                  <h3 className="step__title" style={{ color: 'var(--color-dark)' }}>Optimizar Ficha GBP</h3>
-                  <p className="step__body" style={{ color: 'rgba(13, 31, 45, 0.8)' }}>Categorías principales correctas ("Servicios de limpieza", "Lavado a presión"), fotos antes/después geolocalizadas y ofertas activas.</p>
+                  <h3 className="step__title" style={{ color: 'var(--color-dark)' }}>Gestión completa de la ficha de Google</h3>
+                  <p className="step__body" style={{ color: 'rgba(13, 31, 45, 0.8)' }}>Nos ocupamos de todo: fotos de trabajos reales, horarios, servicios y ofertas siempre al día. La ficha trabaja para Briya las 24 horas.</p>
                 </div>
               </div>
               <div className="step">
                 <div className="step__num" style={{ background: 'var(--color-dark)', color: 'var(--color-cream)' }}>02</div>
                 <div className="step__content">
-                  <h3 className="step__title" style={{ color: 'var(--color-dark)' }}>Estrategia Activa de Reseñas</h3>
-                  <p className="step__body" style={{ color: 'rgba(13, 31, 45, 0.8)' }}>Generación automatizada de enlaces cortos de opinión tras completar la limpieza y respuestas ricas en palabras clave geográficas.</p>
+                  <h3 className="step__title" style={{ color: 'var(--color-dark)' }}>Más reseñas, mejores respuestas</h3>
+                  <p className="step__body" style={{ color: 'rgba(13, 31, 45, 0.8)' }}>Tras cada trabajo, el cliente recibe un enlace para dejar su reseña en un clic. Y respondemos todas: rápido y bien.</p>
                 </div>
               </div>
               <div className="step">
                 <div className="step__num" style={{ background: 'var(--color-dark)', color: 'var(--color-cream)' }}>03</div>
                 <div className="step__content">
-                  <h3 className="step__title" style={{ color: 'var(--color-dark)' }}>Consistencia NAP (Citas)</h3>
-                  <p className="step__body" style={{ color: 'rgba(13, 31, 45, 0.8)' }}>Asegurar que Nombre, Dirección y Teléfono sean idénticos en Yelp, hipages y Yellow Pages para ganar autoridad ante el algoritmo de Google.</p>
+                  <h3 className="step__title" style={{ color: 'var(--color-dark)' }}>Los mismos datos en todas partes</h3>
+                  <p className="step__body" style={{ color: 'rgba(13, 31, 45, 0.8)' }}>Nombre, dirección y teléfono idénticos en Google, Yelp, hipages y Yellow Pages. Google premia esa coherencia con mejores posiciones.</p>
                 </div>
               </div>
             </div>

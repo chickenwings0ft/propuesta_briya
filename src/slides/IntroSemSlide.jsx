@@ -15,7 +15,7 @@ export default function IntroSemSlide() {
             
             <p className="section-body" style={{ marginBottom: '1.25rem', paddingLeft: '1.5rem', borderLeft: '3px solid #0284c7', fontSize: '1.05rem', lineHeight: 1.6 }}>
               <strong style={{ fontSize: '1.2rem', display: 'block', marginBottom: '0.4rem', color: '#0284c7' }}>SEM (Pago por Clic)</strong>
-              Resultados obtenidos pagando por aparecer en los primeros puestos de Google. Solo se paga cuando alguien hace clic en el anuncio. Ideal para captar clientes de forma inmediata, controlar el presupuesto al detalle y activar campañas en momentos clave.
+              Resultados obtenidos pagando por aparecer en los primeros puestos de Google. Ideal para captar clientes de forma inmediata, controlar el presupuesto al detalle y activar campañas en momentos clave.
             </p>
 
             <div style={{ background: 'rgba(234,179,8,0.08)', border: '1px solid rgba(234,179,8,0.3)', borderRadius: '10px', padding: '0.9rem 1.1rem', display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
@@ -23,7 +23,7 @@ export default function IntroSemSlide() {
               <div>
                 <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#b45309', marginBottom: '0.25rem' }}>Inmediato — pero solo mientras pagas</div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--color-dark)', lineHeight: 1.5, opacity: 0.85 }}>
-                  Si pagas, apareces <strong>hoy mismo</strong> en los primeros puestos. Si dejas de pagar, <strong>dejas de aparecer</strong>: el SEM no construye posicionamiento propio, lo alquila.
+                  Si pagas, apareces <strong>hoy mismo</strong> en los primeros puestos. Si dejas de pagar, <strong>dejas de aparecer</strong>.
                 </div>
               </div>
             </div>

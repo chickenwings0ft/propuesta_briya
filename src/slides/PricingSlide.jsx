@@ -1,18 +1,29 @@
-const PILLARS = [
+const PACKS = [
   {
-    name: 'SEO',
+    name: 'Posicionamiento Web',
+    sub: 'SEO + SEM',
+    price: '1.350',
     color: '#38bdf8',
-    items: ['SEO local + Google Business', 'Landings por zona y servicio', 'Optimización para IAs'],
+    items: [
+      'SEO local + gestión completa de la ficha de Google',
+      'Landings por servicio y zona',
+      'Optimización para IAs (ChatGPT)',
+      'Gestión de Google Ads y Meta Ads',
+      'Informe mensual de resultados',
+    ],
   },
   {
-    name: 'SEM',
-    color: '#eab308',
-    items: ['Gestión de Google Ads', 'Gestión de Meta Ads (IG + FB)', 'Optimización semanal'],
-  },
-  {
-    name: 'RRSS',
+    name: 'Redes Sociales',
+    sub: 'Instagram + Facebook',
+    price: '990',
     color: '#E1306C',
-    items: ['Calendario de contenido', 'Identidad visual de marca', 'Comunidad y reseñas'],
+    items: [
+      'Calendario de contenido mensual',
+      'Publicaciones con identidad de marca',
+      'Reels, historias y antes/después',
+      'Gestión de comunidad y reseñas',
+      'Informe mensual de resultados',
+    ],
   },
 ]
 
@@ -44,65 +55,77 @@ export default function PricingSlide() {
         <span className="reveal" style={{ fontSize: '0.85rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--color-floral)', marginBottom: '1rem' }}>
           Propuesta Comercial
         </span>
-        <h2 className="reveal" style={{ fontSize: 'clamp(2.2rem, 4.5vw, 3.5rem)', fontWeight: 800, marginBottom: '2rem', textAlign: 'center', lineHeight: 1.1 }}>
+        <h2 className="reveal" style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)', fontWeight: 800, marginBottom: '2rem', textAlign: 'center', lineHeight: 1.1 }}>
           El momento <br/>de estar arriba.
         </h2>
 
-        {/* Pricing card */}
+        {/* Two packs */}
+        <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem', width: '100%', maxWidth: '820px' }}>
+          {PACKS.map((pack, i) => (
+            <div key={i} style={{
+              background: 'rgba(254, 254, 255, 0.03)',
+              border: '1px solid rgba(2, 132, 199, 0.2)',
+              borderRadius: '16px',
+              padding: '1.75rem 1.9rem',
+              boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
+              display: 'flex',
+              flexDirection: 'column',
+              position: 'relative',
+              overflow: 'hidden'
+            }}>
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: pack.color }} />
+
+              <div style={{ fontSize: '1.15rem', fontWeight: 800, color: 'var(--color-floral)', marginBottom: '0.2rem' }}>{pack.name}</div>
+              <div style={{ fontSize: '0.72rem', color: '#a1a1aa', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '1.1rem' }}>{pack.sub}</div>
+
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.4rem', marginBottom: '1.25rem', paddingBottom: '1.1rem', borderBottom: '1px solid rgba(2, 132, 199, 0.15)' }}>
+                <span style={{ fontSize: '2.2rem', fontWeight: 800, lineHeight: 1 }}>A$ {pack.price}</span>
+                <span style={{ fontSize: '0.85rem', color: '#a1a1aa' }}>/mes</span>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                {pack.items.map((t, j) => (
+                  <div key={j} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start' }}>
+                    <div style={{ width: 5, height: 5, borderRadius: '50%', background: pack.color, flexShrink: 0, marginTop: '7px' }} />
+                    <span style={{ fontSize: '0.78rem', color: '#d4d4d8', lineHeight: 1.45 }}>{t}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Combined offer */}
         <div className="reveal" style={{
-          background: 'rgba(254, 254, 255, 0.03)',
-          border: '1px solid rgba(2, 132, 199, 0.2)',
-          borderRadius: '18px',
+          marginTop: '1.25rem',
           width: '100%',
-          maxWidth: '780px',
-          boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
-          overflow: 'hidden'
+          maxWidth: '820px',
+          background: 'linear-gradient(90deg, rgba(2,132,199,0.15), rgba(56,189,248,0.08))',
+          border: '1px solid rgba(56,189,248,0.35)',
+          borderRadius: '14px',
+          padding: '1.1rem 1.75rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: '1rem'
         }}>
-
-          {/* Header: plan + price */}
-          <div style={{ padding: '2rem 2.5rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1.5rem', borderBottom: '1px solid rgba(2, 132, 199, 0.15)' }}>
-            <div>
-              <div style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--color-floral)', marginBottom: '0.3rem' }}>Estrategia Digital Completa</div>
-              <div style={{ fontSize: '0.82rem', color: '#a1a1aa' }}>SEO + SEM + Redes Sociales gestionados como un solo sistema</div>
+          <div>
+            <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--color-floral)', marginBottom: '0.25rem' }}>
+              🎁 Estrategia completa — los dos servicios
             </div>
-            <div style={{ textAlign: 'right' }}>
-              <div style={{ fontSize: '0.7rem', color: '#a1a1aa', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.25rem' }}>Mensualidad</div>
-              <div style={{ fontSize: '2.6rem', fontWeight: 800, lineHeight: 1, whiteSpace: 'nowrap' }}>
-                A$ 2.300<span style={{ fontSize: '1rem', fontWeight: 400, color: '#a1a1aa' }}>/mes</span>
-              </div>
-              <div style={{ fontSize: '0.68rem', color: '#a1a1aa', marginTop: '0.3rem' }}>AUD · todo incluido</div>
+            <div style={{ fontSize: '0.78rem', color: '#a1a1aa' }}>
+              Posicionamiento Web + Redes Sociales trabajando como un solo sistema
             </div>
           </div>
-
-          {/* Three pillars */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0 }}>
-            {PILLARS.map((p, i) => (
-              <div key={i} style={{ padding: '1.4rem 1.5rem', borderRight: i < PILLARS.length - 1 ? '1px solid rgba(2, 132, 199, 0.12)' : 'none' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.85rem' }}>
-                  <div style={{ width: 8, height: 8, borderRadius: '50%', background: p.color }} />
-                  <span style={{ fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', textTransform: 'uppercase' }}>{p.name}</span>
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.55rem' }}>
-                  {p.items.map((t, j) => (
-                    <div key={j} style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
-                      <div style={{ width: 4, height: 4, borderRadius: '50%', background: p.color, flexShrink: 0, marginTop: '7px', opacity: 0.8 }} />
-                      <span style={{ fontSize: '0.75rem', color: '#d4d4d8', lineHeight: 1.45 }}>{t}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <div style={{ textAlign: 'right' }}>
+            <span style={{ fontSize: '0.95rem', color: '#71717a', textDecoration: 'line-through', marginRight: '0.6rem' }}>A$ 2.340</span>
+            <span style={{ fontSize: '1.9rem', fontWeight: 800, whiteSpace: 'nowrap' }}>A$ 2.200<span style={{ fontSize: '0.9rem', fontWeight: 400, color: '#a1a1aa' }}>/mes</span></span>
           </div>
+        </div>
 
-          {/* Footer note */}
-          <div style={{ padding: '1rem 2.5rem 1.4rem', borderTop: '1px solid rgba(2, 132, 199, 0.12)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
-            <div style={{ fontSize: '0.72rem', color: '#a1a1aa', lineHeight: 1.5 }}>
-              Incluye soporte técnico "all-in" para cualquier cambio en la web · Informe mensual de resultados
-            </div>
-            <div style={{ fontSize: '0.68rem', color: '#71717a' }}>
-              * Inversión publicitaria en Google/Meta Ads no incluida
-            </div>
-          </div>
+        <div className="reveal" style={{ marginTop: '1rem', fontSize: '0.68rem', color: '#71717a', textAlign: 'center' }}>
+          Precios en dólares australianos (AUD) · Incluye soporte "all-in" para cualquier cambio en la web · * Inversión publicitaria en Google/Meta Ads no incluida
         </div>
 
       </div>

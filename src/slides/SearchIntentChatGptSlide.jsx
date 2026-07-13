@@ -8,8 +8,8 @@ export default function SearchIntentChatGptSlide() {
             Búsqueda por IA
           </h2>
           <p className="card__body" style={{ fontSize: '1.25rem', maxWidth: '1000px', margin: '0 auto', color: '#ececf1' }}>
-            <strong style={{ color: '#10a37f', display: 'block', marginBottom: '0.8rem', fontSize: '1.4rem' }}>"¿Qué empresa me recomiendas para limpiar a fondo la fachada de mi casa en Gold Coast de forma segura para las plantas?"</strong>
-            <em style={{ opacity: 0.8, display: 'block', maxWidth: '800px', margin: '0 auto', fontSize: '1rem' }}>Aquí es donde ocurre la venta por recomendación. Las IAs no muestran una lista de enlaces; recomiendan directamente con argumentos detallados y objetivos.</em>
+            <strong style={{ color: '#10a37f', display: 'block', marginBottom: '0.8rem', fontSize: '1.4rem' }}>"Which company do you recommend to deep-clean the facade of my house in Gold Coast, safely for my plants?"</strong>
+            <em style={{ color: 'var(--color-dark)', display: 'block', maxWidth: '800px', margin: '0 auto', fontSize: '1rem' }}>Aquí es donde ocurre la venta por recomendación. Las IAs no muestran una lista de enlaces; recomiendan directamente con argumentos detallados y objetivos.</em>
           </p>
         </div>
 

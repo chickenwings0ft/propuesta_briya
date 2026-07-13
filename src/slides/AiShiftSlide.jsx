@@ -1,5 +1,3 @@
-import AnimatedCounter from '../components/AnimatedCounter'
-
 export default function AiShiftSlide() {
   return (
     <section className="section section--cream" id="ai-shift">
@@ -43,24 +41,6 @@ export default function AiShiftSlide() {
           </table>
         </div>
 
-        <div className="metric-grid reveal-stagger" style={{ maxWidth: '900px', margin: '0 auto', gridTemplateColumns: 'repeat(4, 1fr)' }}>
-          <div className="metric">
-            <div className="metric__number">&lt;<AnimatedCounter end={90} suffix="%" /></div>
-            <div className="metric__label">Cuota actual Google</div>
-          </div>
-          <div className="metric">
-            <div className="metric__number"><AnimatedCounter end={60} suffix="%" /></div>
-            <div className="metric__label">Búsquedas "Zero Clics"</div>
-          </div>
-          <div className="metric">
-            <div className="metric__number" style={{ color: 'var(--color-green-light)' }}>+<AnimatedCounter end={740} suffix="%" /></div>
-            <div className="metric__label">Tráfico ChatGPT en 1 año</div>
-          </div>
-          <div className="metric">
-            <div className="metric__number">+<AnimatedCounter end={50} suffix="%" /></div>
-            <div className="metric__label">Gen Z usa IA vs Buscador</div>
-          </div>
-        </div>
       </div>
     </section>
   )
