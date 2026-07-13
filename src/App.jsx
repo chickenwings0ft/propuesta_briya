@@ -8,6 +8,7 @@ import './App.css'
 import HeroSlide from './slides/HeroSlide'
 import IntroSeoSlide from './slides/IntroSeoSlide'
 import IntroSemSlide from './slides/IntroSemSlide'
+import SemChannelsSlide from './slides/SemChannelsSlide'
 import MockGoogleSlide from './slides/MockGoogleSlide'
 import AiShiftSlide from './slides/AiShiftSlide'
 import SearchIntentGoogleSlide from './slides/SearchIntentGoogleSlide'
@@ -23,6 +24,7 @@ import LandingsSlide from './slides/LandingsSlide'
 import SocialCalendarSlide from './slides/SocialCalendarSlide'
 import SocialMetricsSlide from './slides/SocialMetricsSlide'
 import SocialBrandingSlide from './slides/SocialBrandingSlide'
+import MetaAdsSlide from './slides/MetaAdsSlide'
 import PricingSlide from './slides/PricingSlide'
 import ClosingSlide from './slides/ClosingSlide'
 import Nav from './components/Nav'
@@ -55,7 +57,7 @@ function App() {
   return (
     <div style={{ width: '100vw', height: '100dvh', overflow: 'hidden', background: 'var(--color-cream)' }}>
       <Preloader onFinish={() => setIntroFinished(true)} />
-      <div style={{ opacity: activeIndex >= 19 ? 0 : 1, transition: 'opacity 0.6s ease', pointerEvents: activeIndex >= 19 ? 'none' : 'auto' }}>
+      <div style={{ opacity: activeIndex >= 21 ? 0 : 1, transition: 'opacity 0.6s ease', pointerEvents: activeIndex >= 21 ? 'none' : 'auto' }}>
         <Nav />
       </div>
       <Swiper
@@ -76,6 +78,7 @@ function App() {
         <SwiperSlide><HeroSlide /></SwiperSlide>
         <SwiperSlide><IntroSeoSlide /></SwiperSlide>
         <SwiperSlide><IntroSemSlide /></SwiperSlide>
+        <SwiperSlide><SemChannelsSlide /></SwiperSlide>
         <SwiperSlide><MockGoogleSlide /></SwiperSlide>
         <SwiperSlide><AiShiftSlide /></SwiperSlide>
         <SwiperSlide><SearchIntentGoogleSlide /></SwiperSlide>
@@ -91,6 +94,7 @@ function App() {
         <SwiperSlide><SocialCalendarSlide /></SwiperSlide>
         <SwiperSlide><SocialMetricsSlide /></SwiperSlide>
         <SwiperSlide><SocialBrandingSlide /></SwiperSlide>
+        <SwiperSlide><MetaAdsSlide /></SwiperSlide>
         <SwiperSlide><ClosingSlide /></SwiperSlide>
         <SwiperSlide><PricingSlide /></SwiperSlide>
       </Swiper>
