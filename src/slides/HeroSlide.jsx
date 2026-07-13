@@ -4,7 +4,7 @@ export default function HeroSlide() {
       <div className="hero__bg-text">SEO</div>
 
       <div className="hero-enter" style={{ position: 'relative', zIndex: 10, marginBottom: '1.5rem' }}>
-        <span className="badge badge--dark" style={{ letterSpacing: '0.15em', padding: '0.5rem 1rem' }}>Estrategia de Posicionamiento Digital 2026</span>
+        <span className="badge badge--dark" style={{ letterSpacing: '0.15em', padding: '0.5rem 1rem' }}>Estrategia de Marketing Digital 2026</span>
       </div>
 
       <img
@@ -21,6 +21,23 @@ export default function HeroSlide() {
       <p className="hero__sub hero-enter" style={{ maxWidth: '650px' }}>
         Plan de acción 2026 centrado en liderar el mercado de limpieza de exteriores en Australia — principalmente Gold Coast (Queensland) y New South Wales.
       </p>
+
+      <div className="hero-enter" style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap' }}>
+        {[
+          { name: 'SEO', color: '#0284c7' },
+          { name: 'SEM', color: '#eab308' },
+          { name: 'REDES SOCIALES', color: '#E1306C' },
+        ].map((s, i, arr) => (
+          <span key={s.name} style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+            <span style={{
+              fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.12em',
+              color: 'var(--color-dark)', border: `2px solid ${s.color}`,
+              borderRadius: '20px', padding: '0.35rem 0.9rem', background: 'rgba(255,255,255,0.6)'
+            }}>{s.name}</span>
+            {i < arr.length - 1 && <span style={{ color: 'var(--color-muted)', fontWeight: 700 }}>+</span>}
+          </span>
+        ))}
+      </div>
 
       <div className="hero__scroll hero-enter" style={{ marginTop: '2.5rem' }}>
         <div className="hero__scroll-line"></div>
