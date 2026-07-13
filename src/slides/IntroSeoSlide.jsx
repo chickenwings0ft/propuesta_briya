@@ -17,6 +17,16 @@ export default function IntroSeoSlide() {
               <strong style={{ fontSize: '1.2rem', display: 'block', marginBottom: '0.4rem', color: '#0284c7' }}>SEO (Orgánico)</strong>
               Resultados obtenidos por contenido útil, fiabilidad y autoridad online. Construcción de un posicionamiento a largo plazo que genera clientes de forma recurrente.
             </p>
+
+            <div style={{ background: 'rgba(2,132,199,0.07)', border: '1px solid rgba(2,132,199,0.2)', borderRadius: '10px', padding: '0.9rem 1.1rem', display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+              <span style={{ fontSize: '1.2rem', lineHeight: 1 }}>🌱</span>
+              <div>
+                <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#0284c7', marginBottom: '0.25rem' }}>Largo plazo — lo construido se queda</div>
+                <div style={{ fontSize: '0.8rem', color: 'var(--color-dark)', lineHeight: 1.5, opacity: 0.85 }}>
+                  El SEO posiciona la marca <strong>poco a poco</strong>: cada mes suma autoridad. Es más lento que la publicidad, pero lo ganado <strong>no desaparece</strong> — sigue trayendo clientes sin pagar por cada clic.
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="reveal-stagger" style={{ flex: 1, padding: '0.5rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>

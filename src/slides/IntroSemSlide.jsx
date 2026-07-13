@@ -17,6 +17,26 @@ export default function IntroSemSlide() {
               <strong style={{ fontSize: '1.2rem', display: 'block', marginBottom: '0.4rem', color: '#0284c7' }}>SEM (Pago por Clic)</strong>
               Resultados obtenidos pagando por aparecer en los primeros puestos de Google. Solo se paga cuando alguien hace clic en el anuncio. Ideal para captar clientes de forma inmediata, controlar el presupuesto al detalle y activar campañas en momentos clave.
             </p>
+
+            <div style={{ background: 'rgba(234,179,8,0.08)', border: '1px solid rgba(234,179,8,0.3)', borderRadius: '10px', padding: '0.9rem 1.1rem', display: 'flex', gap: '0.75rem', alignItems: 'flex-start', marginBottom: '0.85rem' }}>
+              <span style={{ fontSize: '1.2rem', lineHeight: 1 }}>⚡</span>
+              <div>
+                <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#b45309', marginBottom: '0.25rem' }}>Inmediato — pero solo mientras pagas</div>
+                <div style={{ fontSize: '0.8rem', color: 'var(--color-dark)', lineHeight: 1.5, opacity: 0.85 }}>
+                  Si pagas, apareces <strong>hoy mismo</strong> en los primeros puestos. Si dejas de pagar, <strong>dejas de aparecer</strong>: el SEM no construye posicionamiento propio, lo alquila.
+                </div>
+              </div>
+            </div>
+
+            <div style={{ background: 'rgba(2,132,199,0.07)', border: '1px solid rgba(2,132,199,0.2)', borderRadius: '10px', padding: '0.9rem 1.1rem', display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+              <span style={{ fontSize: '1.2rem', lineHeight: 1 }}>🔄</span>
+              <div>
+                <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#0284c7', marginBottom: '0.25rem' }}>El juego SEO + SEM</div>
+                <div style={{ fontSize: '0.8rem', color: 'var(--color-dark)', lineHeight: 1.5, opacity: 0.85 }}>
+                  El SEM se activa <strong>al principio</strong> para captar leads desde el día 1, mientras el SEO va construyendo el posicionamiento de la marca. Con el tiempo el SEO toma el relevo y la dependencia del pago <strong>baja</strong>.
+                </div>
+              </div>
+            </div>
           </div>
  
           <div className="reveal-stagger" style={{ flex: 1, padding: '1rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>

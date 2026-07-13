@@ -27,7 +27,6 @@ import OptimizationSlide from './slides/OptimizationSlide'
 import LandingsSlide from './slides/LandingsSlide'
 import SocialCalendarSlide from './slides/SocialCalendarSlide'
 import SocialMetricsSlide from './slides/SocialMetricsSlide'
-import SocialBrandingSlide from './slides/SocialBrandingSlide'
 import MetaAdsSlide from './slides/MetaAdsSlide'
 import PricingSlide from './slides/PricingSlide'
 import ClosingSlide from './slides/ClosingSlide'
@@ -61,7 +60,7 @@ function App() {
   return (
     <div style={{ width: '100vw', height: '100dvh', overflow: 'hidden', background: 'var(--color-cream)' }}>
       <Preloader onFinish={() => setIntroFinished(true)} />
-      <div style={{ opacity: activeIndex >= 24 ? 0 : 1, transition: 'opacity 0.6s ease', pointerEvents: activeIndex >= 24 ? 'none' : 'auto' }}>
+      <div style={{ opacity: activeIndex >= 23 ? 0 : 1, transition: 'opacity 0.6s ease', pointerEvents: activeIndex >= 23 ? 'none' : 'auto' }}>
         <Nav />
       </div>
       <Swiper
@@ -100,7 +99,6 @@ function App() {
         <SwiperSlide><IntroSocialSlide /></SwiperSlide>
         <SwiperSlide><SocialCalendarSlide /></SwiperSlide>
         <SwiperSlide><SocialMetricsSlide /></SwiperSlide>
-        <SwiperSlide><SocialBrandingSlide /></SwiperSlide>
         <SwiperSlide><MetaAdsSlide /></SwiperSlide>
         <SwiperSlide><InstagramFeedSlide /></SwiperSlide>
         <SwiperSlide><ClosingSlide /></SwiperSlide>
