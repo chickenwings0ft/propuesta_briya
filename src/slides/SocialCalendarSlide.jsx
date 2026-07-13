@@ -8,7 +8,7 @@ const POSTS = [
   { day: 'VIE', date: '06', platform: 'IG', type: 'Reel', content: 'Resultado increíble en chalet', color: '#E1306C', icon: '🎥' },
   { day: 'SÁB', date: '07', platform: 'FB', type: 'Foto', content: 'Trabajo del fin de semana', color: '#1877F2', icon: '🏡' },
   { day: 'LUN', date: '09', platform: 'IG', type: 'Carrusel', content: '5 señales que tu fachada necesita limpieza', color: '#E1306C', icon: '🖼️' },
-  { day: 'MIÉ', date: '11', platform: 'LI', type: 'Post', content: 'Caso de éxito: Urbanización Pozuelo', color: '#0A66C2', icon: '🏆' },
+  { day: 'MIÉ', date: '11', platform: 'LI', type: 'Post', content: 'Caso de éxito: Residencial en Brisbane', color: '#0A66C2', icon: '🏆' },
   { day: 'VIE', date: '13', platform: 'IG', type: 'Story', content: 'Presupuesto gratis → Enlace bio', color: '#E1306C', icon: '💰' },
   { day: 'LUN', date: '16', platform: 'FB', type: 'Vídeo', content: 'Limpieza canaletas, paso a paso', color: '#1877F2', icon: '🔧' },
   { day: 'MIÉ', date: '18', platform: 'IG', type: 'Reel', content: 'Time-lapse trabajo completo', color: '#E1306C', icon: '⏱️' },

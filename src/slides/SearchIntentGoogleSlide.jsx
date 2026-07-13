@@ -8,7 +8,7 @@ export default function SearchIntentGoogleSlide() {
             Búsqueda Tradicional
           </h2>
           <p className="card__body" style={{ fontSize: '1.25rem', maxWidth: '900px', margin: '0 auto', color: 'var(--color-dark)' }}>
-            <strong style={{ display: 'block', marginBottom: '0.5rem', fontSize: '1.4rem' }}>"¿Dónde encontrar una empresa de lavado a presión fiable en Madrid?"</strong>
+            <strong style={{ display: 'block', marginBottom: '0.5rem', fontSize: '1.4rem' }}>"¿Dónde encontrar una empresa de lavado a presión fiable en Gold Coast?"</strong>
             <em style={{ color: 'var(--color-muted)' }}>Aquí el usuario busca opiniones, valoraciones en Google Maps, fotos de trabajos "Antes y Después", servicios ofrecidos y precios estimados.</em>
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function SearchIntentGoogleSlide() {
                 alignItems: 'center',
                 gap: '0.5rem'
               }}>
-                🔒 https://www.google.com/search?q=limpieza+fachadas+madrid
+                🔒 https://www.google.com/search?q=pressure+washing+gold+coast
               </div>
             </div>
 
@@ -59,8 +59,8 @@ export default function SearchIntentGoogleSlide() {
             <div style={{ padding: '1.5rem' }}>
               {/* Local Pack (Google Maps) Header */}
               <div style={{ borderBottom: '1px solid #dfe1e5', paddingBottom: '0.75rem', marginBottom: '1rem' }}>
-                <span style={{ fontSize: '0.75rem', color: '#70757a', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Resultados locales para Madrid</span>
-                <h4 style={{ margin: '0.25rem 0 0', fontSize: '1.2rem', fontWeight: 400 }}>Negocios cerca de ti</h4>
+                <span style={{ fontSize: '0.75rem', color: '#70757a', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Local results for Gold Coast, QLD</span>
+                <h4 style={{ margin: '0.25rem 0 0', fontSize: '1.2rem', fontWeight: 400 }}>Businesses near you</h4>
               </div>
 
               {/* Local Map Vector Block */}
@@ -85,42 +85,42 @@ export default function SearchIntentGoogleSlide() {
                       fontWeight: 800,
                       padding: '2px 6px',
                       borderRadius: '4px'
-                    }}>RECOMENDADO</span>
+                    }}>RECOMMENDED</span>
                     <h5 style={{ margin: '0 0 0.25rem', fontSize: '0.95rem', color: '#1a0dab', fontWeight: 600 }}>Briya (Briya Clean)</h5>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.8rem', color: '#4d5156', margin: '0.25rem 0' }}>
                       <span style={{ color: '#4285f4', fontWeight: 'bold' }}>4.9</span>
                       <span style={{ color: '#fbbc05' }}>★★★★★</span>
                       <span>(84)</span>
-                      <span>· Lavado a presión</span>
+                      <span>· Pressure washing</span>
                     </div>
-                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#4d5156' }}>📍 Madrid · 611 22 33 44</p>
-                    <p style={{ margin: '0.25rem 0 0', fontSize: '0.78rem', color: '#188038', fontWeight: 600 }}>Abierto · Cierra a las 20:00</p>
+                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#4d5156' }}>📍 Gold Coast, QLD · 0412 345 678</p>
+                    <p style={{ margin: '0.25rem 0 0', fontSize: '0.78rem', color: '#188038', fontWeight: 600 }}>Open · Closes 8:00 pm</p>
                   </div>
 
                   {/* Competitor - Map Item 2 */}
                   <div style={{ border: '1px solid #dfe1e5', borderRadius: '8px', padding: '0.85rem' }}>
-                    <h5 style={{ margin: '0 0 0.25rem', fontSize: '0.95rem', color: '#202124', fontWeight: 500 }}>Limpiezas Express Madrid</h5>
+                    <h5 style={{ margin: '0 0 0.25rem', fontSize: '0.95rem', color: '#202124', fontWeight: 500 }}>Coastal Express Cleaning</h5>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.8rem', color: '#4d5156', margin: '0.25rem 0' }}>
                       <span style={{ fontWeight: 'bold' }}>4.4</span>
                       <span style={{ color: '#fbbc05' }}>★★★★☆</span>
                       <span>(31)</span>
-                      <span>· Limpieza general</span>
+                      <span>· General cleaning</span>
                     </div>
-                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#4d5156' }}>📍 Alcobendas · 912 34 56 78</p>
-                    <p style={{ margin: '0.25rem 0 0', fontSize: '0.78rem', color: '#188038' }}>Abierto · Cierra a las 19:00</p>
+                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#4d5156' }}>📍 Brisbane, QLD · (07) 3123 4567</p>
+                    <p style={{ margin: '0.25rem 0 0', fontSize: '0.78rem', color: '#188038' }}>Open · Closes 7:00 pm</p>
                   </div>
 
                   {/* Competitor - Map Item 3 */}
                   <div style={{ border: '1px solid #dfe1e5', borderRadius: '8px', padding: '0.85rem' }}>
-                    <h5 style={{ margin: '0 0 0.25rem', fontSize: '0.95rem', color: '#202124', fontWeight: 500 }}>Multiservicios Hércules</h5>
+                    <h5 style={{ margin: '0 0 0.25rem', fontSize: '0.95rem', color: '#202124', fontWeight: 500 }}>AllRound Property Services</h5>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.8rem', color: '#4d5156', margin: '0.25rem 0' }}>
                       <span style={{ fontWeight: 'bold' }}>4.1</span>
                       <span style={{ color: '#fbbc05' }}>★★★★☆</span>
                       <span>(12)</span>
-                      <span>· Servicios integrales</span>
+                      <span>· Property maintenance</span>
                     </div>
-                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#4d5156' }}>📍 Madrid centro · 913 21 09 87</p>
-                    <p style={{ margin: '0.25rem 0 0', fontSize: '0.78rem', color: '#d93025' }}>Cerrado · Abre mañana 09:00</p>
+                    <p style={{ margin: 0, fontSize: '0.8rem', color: '#4d5156' }}>📍 Tweed Heads, NSW · (02) 6612 3456</p>
+                    <p style={{ margin: '0.25rem 0 0', fontSize: '0.78rem', color: '#d93025' }}>Closed · Opens 9:00 am tomorrow</p>
                   </div>
                 </div>
 
@@ -139,7 +139,7 @@ export default function SearchIntentGoogleSlide() {
                 }}>
                   {/* Pure CSS Map Representation */}
                   <div style={{ position: 'absolute', inset: 0, opacity: 0.6, background: 'radial-gradient(circle at 50% 50%, transparent 20%, #ececec 21%, #ececec 22%, transparent 23%), linear-gradient(0deg, transparent 49%, #eaeaea 50%, #eaeaea 51%, transparent 52%), linear-gradient(90deg, transparent 49%, #eaeaea 50%, #eaeaea 51%, transparent 52%)', backgroundSize: '40px 40px, 120px 120px, 120px 120px' }} />
-                  {/* Rivers / Parks */}
+                  {/* Coastline / Parks */}
                   <div style={{ position: 'absolute', width: '100%', height: '35px', background: '#e3f2fd', top: '150px', transform: 'rotate(-15deg)', opacity: 0.8 }} />
                   <div style={{ position: 'absolute', width: '90px', height: '90px', borderRadius: '50%', background: '#e8f5e9', top: '40px', left: '30px', opacity: 0.7 }} />
                   {/* Pins */}

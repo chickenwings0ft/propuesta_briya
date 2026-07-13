@@ -70,7 +70,7 @@ export default function ClosingSlide() {
             Contacto
           </p>
           <p style={{ color: 'var(--color-dark)', fontSize: '1.1rem', fontWeight: 700 }}>briyaclean.com</p>
-          <p style={{ color: 'rgba(13,31,45,0.6)', fontSize: '0.85rem', marginTop: '0.25rem' }}>Madrid · España</p>
+          <p style={{ color: 'rgba(13,31,45,0.6)', fontSize: '0.85rem', marginTop: '0.25rem' }}>Gold Coast · Australia</p>
         </div>
       </div>
     </section>

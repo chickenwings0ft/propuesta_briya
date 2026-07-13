@@ -37,18 +37,18 @@ export default function StructuredDataSlide() {
           <div className="reveal">
             <p className="label" style={{ marginBottom: '1rem' }}>Cómo apareces hoy</p>
             <div className="snippet-preview" style={{ marginBottom: '1.5rem', opacity: 0.6, filter: 'grayscale(0.4)' }}>
-              <div className="snippet-preview__url">briyaclean.com</div>
-              <div className="snippet-preview__title">Briya Clean — Limpieza</div>
-              <div className="snippet-preview__desc">Servicios de limpieza exterior en Madrid.</div>
+              <div className="snippet-preview__url">briyaclean.com.au</div>
+              <div className="snippet-preview__title">Briya Clean — Cleaning</div>
+              <div className="snippet-preview__desc">Exterior cleaning services in Gold Coast.</div>
             </div>
 
             <p className="label" style={{ marginBottom: '1rem', color: 'var(--color-cream)' }}>Con Rich Snippets activos</p>
             <div className="snippet-preview">
-              <div className="snippet-preview__url">briyaclean.com › madrid</div>
-              <div className="snippet-preview__title">Briya — Limpieza de Exteriores de Casas de Confianza</div>
-              <div className="snippet-preview__stars">★★★★★ 4.9 · 84 reseñas</div>
-              <div className="snippet-preview__extra">Abierto ahora · Servicios · Madrid</div>
-              <div className="snippet-preview__desc">Especialistas en limpieza de fachadas, tejados con técnica Soft-Wash segura y lavado a presión. Recupera la belleza de tu casa protegiendo tu jardín.</div>
+              <div className="snippet-preview__url">briyaclean.com.au › gold-coast</div>
+              <div className="snippet-preview__title">Briya — Trusted Exterior Cleaning in Gold Coast</div>
+              <div className="snippet-preview__stars">★★★★★ 4.9 · 84 reviews</div>
+              <div className="snippet-preview__extra">Open now · Services · Gold Coast, QLD</div>
+              <div className="snippet-preview__desc">Specialists in facade and roof cleaning with safe Soft-Wash technique and pressure washing. Restore your home's beauty while protecting your garden.</div>
             </div>
 
             <p className="label" style={{ marginTop: '1.5rem', marginBottom: '0.75rem' }}>JSON-LD que implementamos</p>
@@ -58,8 +58,8 @@ export default function StructuredDataSlide() {
               &nbsp;&nbsp;<span className="key">"@context"</span>: <span className="val">"https://schema.org"</span>,<br/>
               &nbsp;&nbsp;<span className="key">"@type"</span>: <span className="val">"ProfessionalService"</span>,<br/>
               &nbsp;&nbsp;<span className="key">"name"</span>: <span className="val">"Briya Clean"</span>,<br/>
-              &nbsp;&nbsp;<span className="key">"areaServed"</span>: <span className="val">"Madrid"</span>,<br/>
-              &nbsp;&nbsp;<span className="key">"priceRange"</span>: <span className="val">"€€"</span>,<br/>
+              &nbsp;&nbsp;<span className="key">"areaServed"</span>: <span className="val">"Gold Coast, QLD"</span>,<br/>
+              &nbsp;&nbsp;<span className="key">"priceRange"</span>: <span className="val">"$$"</span>,<br/>
               &nbsp;&nbsp;<span className="key">"aggregateRating"</span>: {'{'}<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;<span className="key">"ratingValue"</span>: <span className="val">"4.9"</span>,<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;<span className="key">"reviewCount"</span>: <span className="val">"84"</span><br/>

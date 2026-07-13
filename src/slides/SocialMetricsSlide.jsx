@@ -11,14 +11,14 @@ const INSIGHTS = [
   { icon: '🕗', label: 'Mejor horario', value: 'Mar–Jue 19:00–21:00', sub: 'Pico de engagement en Instagram' },
   { icon: '🎬', label: 'Formato estrella', value: 'Reels', sub: '+3.2× más alcance que fotos estáticas' },
   { icon: '🔑', label: 'Palabra ganadora', value: '#SoftWash', sub: '38K búsquedas mensuales en IG' },
-  { icon: '📍', label: 'Geolocalización', value: 'Madrid Centro', sub: '62% del tráfico orgánico local' },
+  { icon: '📍', label: 'Geolocalización', value: 'Gold Coast', sub: '62% del tráfico orgánico local' },
 ]
 
 const TREND_ACTIONS = [
   { trend: 'Reels before/after', aplicacion: 'Aumentar frecuencia a 3×/sem', impacto: 'Alto' },
   { trend: 'Estética limpia + minimalista', aplicacion: 'Nuevo pack visual Q3 2026', impacto: 'Alto' },
   { trend: 'Contenido educativo corto', aplicacion: 'Serie "¿Lo sabías?" mensual', impacto: 'Medio' },
-  { trend: 'Colaboraciones locales', aplicacion: 'Micro-influencers Madrid zona norte', impacto: 'Alto' },
+  { trend: 'Colaboraciones locales', aplicacion: 'Micro-influencers Gold Coast y Brisbane', impacto: 'Alto' },
 ]
 
 function MiniSparkline({ data, color, inView, delay = 0 }) {

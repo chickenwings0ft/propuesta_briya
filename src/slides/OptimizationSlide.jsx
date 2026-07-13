@@ -1,13 +1,13 @@
 export default function OptimizationSlide() {
   const KWS = [
-    { kw: 'limpieza de fachadas madrid', vol: '1.6K', cpc: '€2.10', kd: 35, kdColor: '#4ade80', pos: '#11', ai: 'Alta' },
-    { kw: 'lavado a presion madrid', vol: '1.2K', cpc: '€1.80', kd: 28, kdColor: '#4ade80', pos: '#8', ai: 'Muy Alta' },
-    { kw: 'limpieza de tejados madrid', vol: '880', cpc: '€2.40', kd: 41, kdColor: '#facc15', pos: '#15', ai: 'Alta' },
-    { kw: 'limpieza canaletas precio', vol: '1.4K', cpc: '€1.20', kd: 48, kdColor: '#facc15', pos: '>50', ai: 'Media' },
-    { kw: 'empresa lavado presion chalet', vol: '590', cpc: '€2.80', kd: 18, kdColor: '#4ade80', pos: '-', ai: 'Muy Alta' },
-    { kw: 'limpieza fachadas piedra', vol: '720', cpc: '€1.95', kd: 30, kdColor: '#4ade80', pos: '#24', ai: 'Alta' },
-    { kw: 'soft wash españa', vol: '320', cpc: '€1.50', kd: 14, kdColor: '#4ade80', pos: '#19', ai: 'Muy Alta' },
-    { kw: 'eliminar moho paredes exteriores', vol: '2.1K', cpc: '€1.10', kd: 52, kdColor: '#facc15', pos: '#45', ai: 'Media' },
+    { kw: 'pressure washing gold coast', vol: '1.6K', cpc: 'A$2.10', kd: 35, kdColor: '#4ade80', pos: '#11', ai: 'Alta' },
+    { kw: 'house washing brisbane', vol: '1.2K', cpc: 'A$1.80', kd: 28, kdColor: '#4ade80', pos: '#8', ai: 'Muy Alta' },
+    { kw: 'roof cleaning gold coast', vol: '880', cpc: 'A$2.40', kd: 41, kdColor: '#facc15', pos: '#15', ai: 'Alta' },
+    { kw: 'gutter cleaning cost', vol: '1.4K', cpc: 'A$1.20', kd: 48, kdColor: '#facc15', pos: '>50', ai: 'Media' },
+    { kw: 'driveway pressure cleaning near me', vol: '590', cpc: 'A$2.80', kd: 18, kdColor: '#4ade80', pos: '-', ai: 'Muy Alta' },
+    { kw: 'soft wash house cleaning', vol: '720', cpc: 'A$1.95', kd: 30, kdColor: '#4ade80', pos: '#24', ai: 'Alta' },
+    { kw: 'soft washing australia', vol: '320', cpc: 'A$1.50', kd: 14, kdColor: '#4ade80', pos: '#19', ai: 'Muy Alta' },
+    { kw: 'remove mould from exterior walls', vol: '2.1K', cpc: 'A$1.10', kd: 52, kdColor: '#facc15', pos: '#45', ai: 'Media' },
   ]
 
   return (

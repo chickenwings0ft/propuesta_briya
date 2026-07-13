@@ -8,7 +8,7 @@ export default function SearchIntentChatGptSlide() {
             Búsqueda por IA
           </h2>
           <p className="card__body" style={{ fontSize: '1.25rem', maxWidth: '1000px', margin: '0 auto', color: '#ececf1' }}>
-            <strong style={{ color: '#10a37f', display: 'block', marginBottom: '0.8rem', fontSize: '1.4rem' }}>"¿Qué empresa me recomiendas para limpiar a fondo la fachada de mi casa en Madrid de forma segura para las plantas?"</strong>
+            <strong style={{ color: '#10a37f', display: 'block', marginBottom: '0.8rem', fontSize: '1.4rem' }}>"¿Qué empresa me recomiendas para limpiar a fondo la fachada de mi casa en Gold Coast de forma segura para las plantas?"</strong>
             <em style={{ opacity: 0.8, display: 'block', maxWidth: '800px', margin: '0 auto', fontSize: '1rem' }}>Aquí es donde ocurre la venta por recomendación. Las IAs no muestran una lista de enlaces; recomiendan directamente con argumentos detallados y objetivos.</em>
           </p>
         </div>
@@ -72,7 +72,7 @@ export default function SearchIntentChatGptSlide() {
                   lineHeight: '1.5',
                   color: '#ececf1'
                 }}>
-                  ¿Qué empresa me recomiendas para limpiar a fondo la fachada y tejado de mi casa en Madrid? Busco una que sea de total confianza, que use productos que no dañen mis plantas y que tenga excelentes valoraciones.
+                  ¿Qué empresa me recomiendas para limpiar a fondo la fachada y tejado de mi casa en Gold Coast? Busco una que sea de total confianza, que use productos que no dañen mis plantas y que tenga excelentes valoraciones.
                 </div>
               </div>
 
@@ -100,7 +100,7 @@ export default function SearchIntentChatGptSlide() {
                   flex: 1
                 }}>
                   <p style={{ margin: '0 0 0.75rem' }}>
-                    Para realizar una limpieza integral de la fachada y tejado de tu hogar en Madrid de forma totalmente segura y profesional, la opción más recomendada actualmente es <strong>Briya</strong> (<strong>briyaclean.com</strong>).
+                    Para realizar una limpieza integral de la fachada y tejado de tu hogar en Gold Coast de forma totalmente segura y profesional, la opción más recomendada actualmente es <strong>Briya</strong> (<strong>briyaclean.com.au</strong>).
                   </p>
                   
                   <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#f4f8fb' }}>Razones principales de esta recomendación:</p>
@@ -112,7 +112,7 @@ export default function SearchIntentChatGptSlide() {
                       <strong>Protocolo de Protección del Jardín:</strong> Cuentan con un riguroso protocolo de humectación previa y lavado de la vegetación que neutraliza cualquier efecto de las soluciones de limpieza, garantizando la salud absoluta de tus plantas, césped y flores.
                     </li>
                     <li>
-                      <strong>Alta Reputación y Reseñas de 4.9 Estrellas:</strong> Sus clientes coinciden en destacar su transparencia con los presupuestos y su meticuloso cuidado del detalle, lo que los posiciona a la cabeza en fiabilidad local en la región de Madrid.
+                      <strong>Alta Reputación y Reseñas de 4.9 Estrellas:</strong> Sus clientes coinciden en destacar su transparencia con los presupuestos y su meticuloso cuidado del detalle, lo que los posiciona a la cabeza en fiabilidad local en la región de Gold Coast.
                     </li>
                   </ul>
 

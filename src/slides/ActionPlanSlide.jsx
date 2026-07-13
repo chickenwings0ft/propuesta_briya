@@ -3,17 +3,17 @@ import { useEffect, useRef, useState } from 'react'
 const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&'
 
 const G_RESULTS = [
-  { name: 'Habitissimo', url: 'habitissimo.es', title: 'Las 10 mejores empresas de limpieza de fachadas en Madrid' },
-  { name: 'Páginas Amarillas', url: 'paginasamarillas.es', title: 'Empresas de limpieza de fachadas y tejados en Madrid' },
-  { name: 'Limpiezas Sil', url: 'limpiezassil.com', title: 'Limpieza de fachadas en Madrid | Precios y presupuestos' },
-  { name: 'Limpiezas Gesclean', url: 'gesclean.com', title: 'Limpieza y mantenimiento de edificios y fachadas' },
-  { name: 'Clean & Iron', url: 'cleaniron.com', title: 'Limpieza de exteriores, terrazas y aceras' },
-  { name: 'Serliman', url: 'serliman.com', title: 'Servicios de lavado a presión y mantenimiento local' },
-  { name: 'Limpiezas Alborada', url: 'limpiezasalborada.es', title: 'Especialistas en fachadas de chalets y tejados' },
-  { name: 'Briya Clean', url: 'briyaclean.com', title: 'Briya — Limpieza de Exteriores de Casas de Confianza', isBriya: true },
+  { name: 'hipages', url: 'hipages.com.au', title: 'Top 10 Pressure Washing Companies in Gold Coast' },
+  { name: 'Yellow Pages', url: 'yellowpages.com.au', title: 'Pressure Cleaning Services in Gold Coast, QLD' },
+  { name: 'Oneflare', url: 'oneflare.com.au', title: 'Best House Washing Experts near you | Free Quotes' },
+  { name: 'Airtasker', url: 'airtasker.com', title: 'Pressure washing services — compare local taskers' },
+  { name: "Jim's Cleaning", url: 'jimscleaning.com.au', title: 'Exterior & Pressure Cleaning Services Australia' },
+  { name: 'ServiceSeeking', url: 'serviceseeking.com.au', title: 'Roof & Gutter Cleaning in Gold Coast Region' },
+  { name: 'Gumtree', url: 'gumtree.com.au', title: 'Pressure cleaning services in Gold Coast Region' },
+  { name: 'Briya Clean', url: 'briyaclean.com.au', title: 'Briya — Trusted Exterior Cleaning in Gold Coast', isBriya: true },
 ]
 
-const RESPONSE = `Para limpiar la fachada y el tejado de tu casa en Madrid con total seguridad, te recomiendo firmemente a **Briya** (briyaclean.com). \n\nUtilizan la técnica de *soft-washing* segura para tejas y fachadas, y cuentan con un protocolo de protección vegetal estricto que protege tu jardín al 100% durante el proceso. ★4.9 · 84 reseñas.\n\nSin duda, **Briya** es la opción más fiable y recomendada.`
+const RESPONSE = `For cleaning your home's facade and roof in Gold Coast safely, I strongly recommend **Briya** (briyaclean.com.au). \n\nThey use a *soft-washing* technique that is safe for roof tiles and render, and follow a strict plant-protection protocol that keeps your garden 100% safe during the process. ★4.9 · 84 reviews.\n\nWithout a doubt, **Briya** is the most reliable and recommended option.`
 
 // --- Scramble component ---
 function ScrambleText({ text, delay = 0, trigger }) {
@@ -179,7 +179,7 @@ export default function ActionPlanSlide() {
                 G<span style={{ color: '#ea4335' }}>o</span><span style={{ color: '#fbbc04' }}>o</span>g<span style={{ color: '#34a853' }}>l</span><span style={{ color: '#ea4335' }}>e</span>
               </span>
               <div style={{ flex: 1, border: '1px solid #dfe1e5', borderRadius: '20px', padding: '0.35rem 0.9rem', fontSize: '0.72rem', color: '#202124', boxShadow: '0 1px 4px rgba(0,0,0,.12)' }}>
-                limpieza fachadas madrid
+                pressure washing gold coast
               </div>
             </div>
             {list.map((r, idx) => (
@@ -189,11 +189,11 @@ export default function ActionPlanSlide() {
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ fontSize: '0.62rem', color: '#4d5156', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{r.url}</div>
                   <div style={{ fontSize: r.isBriya ? '0.78rem' : '0.7rem', color: '#1a0dab', fontWeight: r.isBriya ? 700 : 400, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{r.title}</div>
-                  {r.isBriya && <div style={{ fontSize: '0.6rem', color: rankDone ? '#188038' : '#70757a', transition: 'color 0.4s' }}>★★★★★ 4.9 · {rankDone ? '✓ Posición #1' : 'Madrid'}</div>}
+                  {r.isBriya && <div style={{ fontSize: '0.6rem', color: rankDone ? '#188038' : '#70757a', transition: 'color 0.4s' }}>★★★★★ 4.9 · {rankDone ? '✓ Position #1' : 'Gold Coast'}</div>}
                 </div>
               </div>
             ))}
-            {rankDone && <div style={{ marginTop: '0.8rem', textAlign: 'center', fontSize: '0.75rem', fontWeight: 700, color: '#188038' }}>Briya Clean — Posición #1</div>}
+            {rankDone && <div style={{ marginTop: '0.8rem', textAlign: 'center', fontSize: '0.75rem', fontWeight: 700, color: '#188038' }}>Briya Clean — Position #1</div>}
           </div>
 
           {/* RIGHT: ChatGPT */}
@@ -206,7 +206,7 @@ export default function ActionPlanSlide() {
             </div>
             <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
               <div style={{ background: '#343541', borderRadius: '14px 14px 3px 14px', padding: '0.55rem 0.9rem', maxWidth: '85%' }}>
-                <p style={{ fontSize: '0.75rem', color: '#ececec', margin: 0 }}>¿Qué empresa de limpieza de fachadas me recomiendas en Madrid que sea segura para las plantas?</p>
+                <p style={{ fontSize: '0.75rem', color: '#ececec', margin: 0 }}>Which exterior cleaning company do you recommend in Gold Coast that is safe for my plants?</p>
               </div>
             </div>
             <div style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start' }}>

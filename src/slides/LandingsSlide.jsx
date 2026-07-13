@@ -5,7 +5,7 @@ export default function LandingsSlide() {
       type: 'Landing Local',
       volume: '1.6K',
       dificultad: 'Media',
-      proposed: '/limpieza-fachadas-madrid',
+      proposed: '/house-washing-gold-coast',
       color: 'var(--color-green)',
     },
     {
@@ -13,7 +13,7 @@ export default function LandingsSlide() {
       type: 'Landing Servicio',
       volume: '880',
       dificultad: 'Baja',
-      proposed: '/limpieza-tejados-softwash',
+      proposed: '/soft-wash-roof-cleaning',
       color: 'var(--color-green)',
     },
     {
@@ -21,7 +21,7 @@ export default function LandingsSlide() {
       type: 'Landing Servicio',
       volume: '1.4K',
       dificultad: 'Baja',
-      proposed: '/limpieza-canaletas-madrid',
+      proposed: '/gutter-cleaning-gold-coast',
       color: 'var(--color-green-light)',
     },
     {
@@ -29,7 +29,7 @@ export default function LandingsSlide() {
       type: 'Landing Local',
       volume: '1.2K',
       dificultad: 'Baja',
-      proposed: '/lavado-presion-madrid',
+      proposed: '/pressure-washing-brisbane',
       color: 'var(--color-green-light)',
     },
   ]
@@ -62,7 +62,7 @@ export default function LandingsSlide() {
                 {c.keyword}
               </div>
               <div className="code-block" style={{ marginTop: '1rem', fontSize: '0.72rem', background: '#e8f2f8', border: '1px solid rgba(2,132,199,0.1)', color: 'var(--color-green)' }}>
-                briyaclean.com<span style={{ color: 'var(--color-dark)' }}>{c.proposed}</span>
+                briyaclean.com.au<span style={{ color: 'var(--color-dark)' }}>{c.proposed}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '0.85rem', alignItems: 'center' }}>
                 <span className="label">Dificultad: {c.dificultad}</span>
@@ -77,7 +77,7 @@ export default function LandingsSlide() {
           <div className="highlight-bar__content">
             <div className="highlight-bar__title" style={{ color: 'var(--color-dark)' }}>Estrategia de conversión local</div>
             <div className="highlight-bar__text">
-              Creación de 10 Landing Pages optimizadas para servicios de limpieza de exteriores enfocados a chalets en la Comunidad de Madrid, garantizando un embudo que convierte el tráfico orgánico e IA en solicitudes de presupuesto directas.
+              Creación de 10 Landing Pages optimizadas para servicios de limpieza de exteriores enfocados a viviendas en Gold Coast, Brisbane y New South Wales, garantizando un embudo que convierte el tráfico orgánico e IA en solicitudes de presupuesto directas.
             </div>
           </div>
         </div>

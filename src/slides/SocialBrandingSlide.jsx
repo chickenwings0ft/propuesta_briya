@@ -275,7 +275,7 @@ export default function SocialBrandingSlide() {
                 Ventaja diferencial
               </div>
               <div style={{ fontSize: '0.75rem', color: 'var(--color-muted)', lineHeight: 1.5 }}>
-                La mayoría de empresas de limpieza en Madrid publican de forma inconsistente. Una marca visual y comunicativamente sólida genera hasta <strong style={{ color: 'var(--color-dark)' }}>3× más confianza</strong> y convierte más rápido.
+                La mayoría de empresas de limpieza en Gold Coast publican de forma inconsistente. Una marca visual y comunicativamente sólida genera hasta <strong style={{ color: 'var(--color-dark)' }}>3× más confianza</strong> y convierte más rápido.
               </div>
             </div>
 
