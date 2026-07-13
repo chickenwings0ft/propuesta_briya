@@ -101,9 +101,9 @@ export default function InstagramAdSlide() {
 
           {/* ── REEL ── */}
           <div style={{
-            width: '190px',
+            width: '280px',
             aspectRatio: '9 / 19.5',
-            borderRadius: '24px',
+            borderRadius: '28px',
             overflow: 'hidden',
             position: 'relative',
             background: '#000',
@@ -125,31 +125,31 @@ export default function InstagramAdSlide() {
 
             {/* Header */}
             <div style={{ position: 'absolute', top: '0.6rem', left: '0.7rem', right: '0.7rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-              <div style={{ width: '22px', height: '22px', borderRadius: '50%', background: '#061a3f', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', padding: '3px', flexShrink: 0, border: '1.5px solid #fff' }}>
+              <div style={{ width: '30px', height: '30px', borderRadius: '50%', background: '#061a3f', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', padding: '4px', flexShrink: 0, border: '2px solid #fff' }}>
                 <img src="/logo-original.png" alt="Briya" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
-              <span style={{ fontSize: '0.62rem', fontWeight: 700, color: '#fff' }}>briyaclean</span>
-              <span style={{ fontSize: '0.5rem', color: 'rgba(255,255,255,0.75)', marginLeft: '0.2rem' }}>Sponsored</span>
+              <span style={{ fontSize: '0.82rem', fontWeight: 700, color: '#fff' }}>briyaclean</span>
+              <span style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.75)', marginLeft: '0.2rem' }}>Sponsored</span>
             </div>
 
             {/* Right side icons */}
             <div style={{ position: 'absolute', right: '0.5rem', bottom: '3.6rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' }}>
               <span
                 onClick={() => setLiked(!liked)}
-                style={{ fontSize: '1.15rem', cursor: 'pointer', color: liked ? '#ed4956' : '#fff', transform: liked ? 'scale(1.15)' : 'scale(1)', transition: 'transform 0.2s ease, color 0.2s ease' }}
+                style={{ fontSize: '1.55rem', cursor: 'pointer', color: liked ? '#ed4956' : '#fff', transform: liked ? 'scale(1.15)' : 'scale(1)', transition: 'transform 0.2s ease, color 0.2s ease' }}
               >
                 {liked ? '♥' : '♡'}
               </span>
-              <span style={{ fontSize: '1.05rem', color: '#fff' }}>💬</span>
-              <span style={{ fontSize: '1.05rem', color: '#fff' }}>↗</span>
+              <span style={{ fontSize: '1.4rem', color: '#fff' }}>💬</span>
+              <span style={{ fontSize: '1.4rem', color: '#fff' }}>↗</span>
             </div>
 
             {/* CTA overlay */}
             <div style={{ position: 'absolute', bottom: '0.8rem', left: '0.7rem', right: '0.7rem' }}>
-              <div style={{ fontSize: '0.68rem', fontWeight: 700, color: '#fff', lineHeight: 1.35, marginBottom: '0.5rem', textShadow: '0 1px 4px rgba(0,0,0,0.5)' }}>
+              <div style={{ fontSize: '0.92rem', fontWeight: 700, color: '#fff', lineHeight: 1.35, marginBottom: '0.65rem', textShadow: '0 1px 4px rgba(0,0,0,0.5)' }}>
                 Solar panels back to spotless ☀️🧼
               </div>
-              <button style={{ width: '100%', background: '#0668E1', border: 'none', borderRadius: '6px', padding: '0.45rem 0.6rem', fontSize: '0.6rem', fontWeight: 700, color: '#fff', cursor: 'pointer', letterSpacing: '0.03em' }}>
+              <button style={{ width: '100%', background: '#0668E1', border: 'none', borderRadius: '6px', padding: '0.6rem 0.8rem', fontSize: '0.8rem', fontWeight: 700, color: '#fff', cursor: 'pointer', letterSpacing: '0.03em' }}>
                 CONTACT NOW
               </button>
             </div>
