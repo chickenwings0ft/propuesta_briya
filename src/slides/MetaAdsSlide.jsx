@@ -45,7 +45,7 @@ export default function MetaAdsSlide() {
         {/* Header */}
         <div style={{ marginBottom: '1.75rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.4rem' }}>
-            <p className="section-label" style={{ color: 'var(--color-muted)', marginBottom: 0 }}>09 — Meta Ads</p>
+            <p className="section-label" style={{ color: 'var(--color-muted)', marginBottom: 0 }}>08 — Meta Ads</p>
             <img src="/meta-logo.png" alt="Meta" style={{ height: '20px', width: 'auto', objectFit: 'contain' }} />
           </div>
           <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>

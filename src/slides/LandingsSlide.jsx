@@ -1,72 +1,34 @@
 export default function LandingsSlide() {
   const cases = [
-    {
-      keyword: 'Limpieza de fachadas en chalets',
-      type: 'Landing Local',
-      volume: '1.6K',
-      dificultad: 'Media',
-      proposed: '/house-washing-gold-coast',
-      color: 'var(--color-green)',
-    },
-    {
-      keyword: 'Limpieza de tejados con soft-wash',
-      type: 'Landing Servicio',
-      volume: '880',
-      dificultad: 'Baja',
-      proposed: '/soft-wash-roof-cleaning',
-      color: 'var(--color-green)',
-    },
-    {
-      keyword: 'Limpieza de canaletas y bajantes',
-      type: 'Landing Servicio',
-      volume: '1.4K',
-      dificultad: 'Baja',
-      proposed: '/gutter-cleaning-gold-coast',
-      color: 'var(--color-green-light)',
-    },
-    {
-      keyword: 'Lavado a presión de suelos y piedra',
-      type: 'Landing Local',
-      volume: '1.2K',
-      dificultad: 'Baja',
-      proposed: '/pressure-washing-brisbane',
-      color: 'var(--color-green-light)',
-    },
+    { icon: '🏠', service: 'Limpieza de fachadas', url: '/house-washing-gold-coast' },
+    { icon: '🏘️', service: 'Limpieza de tejados', url: '/soft-wash-roof-cleaning' },
+    { icon: '🍂', service: 'Limpieza de canaletas', url: '/gutter-cleaning-gold-coast' },
+    { icon: '💦', service: 'Lavado a presión', url: '/pressure-washing-brisbane' },
   ]
 
   return (
     <section className="section section--cream" id="landings">
       <div className="container">
-        <p className="section-label reveal" style={{ color: 'var(--color-muted)' }}>06 — Landings & Casos</p>
+        <p className="section-label reveal" style={{ color: 'var(--color-muted)' }}>06 — Landings</p>
         <h2 className="section-title reveal" style={{ color: 'var(--color-dark)' }}>
-          Páginas que<br />
-          posicionan.
+          Una página para<br />
+          cada búsqueda.
         </h2>
-        <p className="section-body reveal">
-          Creamos páginas de aterrizaje específicas para las búsquedas más
-          rentables. Cada landing tiene un objetivo claro: aparecer arriba en búsquedas locales y convertir visitas en contactos comerciales directos.
+        <p className="section-body reveal" style={{ fontSize: '0.95rem', lineHeight: 1.65 }}>
+          Creamos una página específica para cada servicio y cada zona. Quien busca "gutter cleaning gold coast" aterriza en una página que habla <strong>exactamente</strong> de eso, con un botón claro para pedir presupuesto.
         </p>
 
-        <div className="card-grid card-grid--2 reveal-stagger" style={{ marginTop: '3rem' }}>
+        <div className="card-grid card-grid--2 reveal-stagger" style={{ marginTop: '2.5rem' }}>
           {cases.map((c, i) => (
-            <div key={i} className="card card--cream" style={{ position: 'relative', overflow: 'hidden' }}>
-              <div style={{
-                position: 'absolute', top: 0, left: 0, right: 0, height: '3px',
-                background: c.color,
-              }}></div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
-                <span className="badge badge--dark">{c.type}</span>
-                <span style={{ fontSize: '0.7rem', color: 'var(--color-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Vol. {c.volume}/mes</span>
-              </div>
-              <div className="card__title" style={{ color: 'var(--color-dark)', fontSize: '0.95rem', marginBottom: '0.5rem' }}>
-                {c.keyword}
-              </div>
-              <div className="code-block" style={{ marginTop: '1rem', fontSize: '0.72rem', background: '#e8f2f8', border: '1px solid rgba(2,132,199,0.1)', color: 'var(--color-green)' }}>
-                briyaclean.com.au<span style={{ color: 'var(--color-dark)' }}>{c.proposed}</span>
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '0.85rem', alignItems: 'center' }}>
-                <span className="label">Dificultad: {c.dificultad}</span>
-                <span style={{ fontSize: '0.65rem', color: 'var(--color-green)', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>→ Planificada</span>
+            <div key={i} className="card card--cream" style={{ display: 'flex', alignItems: 'center', gap: '1.1rem', padding: '1.25rem 1.5rem' }}>
+              <span style={{ fontSize: '1.8rem' }}>{c.icon}</span>
+              <div style={{ minWidth: 0 }}>
+                <div className="card__title" style={{ color: 'var(--color-dark)', fontSize: '0.9rem', marginBottom: '0.35rem' }}>
+                  {c.service}
+                </div>
+                <div style={{ fontSize: '0.72rem', fontFamily: 'Courier New, monospace', color: 'var(--color-green)', background: '#e8f2f8', border: '1px solid rgba(2,132,199,0.1)', borderRadius: '6px', padding: '0.35rem 0.6rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  briyaclean.com.au<span style={{ color: 'var(--color-dark)' }}>{c.url}</span>
+                </div>
               </div>
             </div>
           ))}
@@ -75,9 +37,9 @@ export default function LandingsSlide() {
         <div className="highlight-bar reveal" style={{ marginTop: '2.5rem', background: 'white', border: '1px solid rgba(2, 132, 199, 0.15)' }}>
           <div className="highlight-bar__accent" style={{ background: 'var(--color-dark)' }}></div>
           <div className="highlight-bar__content">
-            <div className="highlight-bar__title" style={{ color: 'var(--color-dark)' }}>Estrategia de conversión local</div>
+            <div className="highlight-bar__title" style={{ color: 'var(--color-dark)' }}>10 landings en total</div>
             <div className="highlight-bar__text">
-              Creación de 10 Landing Pages optimizadas para servicios de limpieza de exteriores enfocados a viviendas en Gold Coast, Brisbane y New South Wales, garantizando un embudo que convierte el tráfico orgánico e IA en solicitudes de presupuesto directas.
+              Cada visita llega a la página exacta de lo que busca y pide presupuesto en un clic.
             </div>
           </div>
         </div>

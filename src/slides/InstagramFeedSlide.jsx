@@ -33,7 +33,7 @@ export default function InstagramFeedSlide() {
 
           {/* LEFT: explanation */}
           <div>
-            <p className="section-label" style={{ color: 'var(--color-muted)', marginBottom: '0.4rem' }}>10 — Instagram</p>
+            <p className="section-label" style={{ color: 'var(--color-muted)', marginBottom: '0.4rem' }}>09 — Instagram</p>
             <h2 className="section-title reveal" style={{ color: 'var(--color-dark)', lineHeight: 1.05, fontSize: 'clamp(1.8rem, 3.2vw, 2.7rem)', marginBottom: '1rem' }}>
               El mismo perfil,<br />
               <span style={{ color: 'var(--color-green)' }}>otra energía.</span>

@@ -1,77 +1,58 @@
 export default function AiReadinessSlide() {
   return (
     <section className="section section--cream" id="ai-readiness">
-      <div className="container">
-        <p className="section-label reveal" style={{ color: 'var(--color-muted)' }}>04 — IA & Futuro</p>
-        <h2 className="section-title reveal" style={{ color: 'var(--color-dark)' }}>
-          Visible para<br />
-          humanos.<br/>
-          <span style={{ color: 'var(--color-muted)' }}>Y para IAs.</span>
-        </h2>
-        <p className="section-body reveal">
-          ChatGPT, Perplexity y Google AI ya responden preguntas de los usuarios 
-          antes de mostrarles resultados web tradicionales. Briya debe aparecer ahí también.
-        </p>
+      <div className="container" style={{ maxWidth: '1250px' }}>
+        <div className="two-col" style={{ gap: '4rem', alignItems: 'center' }}>
 
-        <div className="card-grid card-grid--2 reveal-stagger" style={{ marginTop: '3rem' }}>
-          <div className="card" style={{ borderColor: 'rgba(2, 132, 199, 0.2)' }}>
-            <div className="card__icon">🤖</div>
-            <div className="card__label">Archivo /llms.txt</div>
-            <div className="card__title">Legible por IAs</div>
-            <div className="card__body">
-              Un archivo de texto en la raíz de la web que les explica a los rastreadores 
-              de IA quién eres, qué ofreces y cómo citar a Briya correctamente. 
-              Es el nuevo estándar emergente para visibilidad en asistentes de IA.
-            </div>
-            <div className="code-block" style={{ marginTop: '1.25rem', fontSize: '0.72rem' }}>
-              <span className="comment"># briyaclean.com.au/llms.txt</span><br />
-              <span className="key">Name:</span> <span className="val">Briya Clean</span><br />
-              <span className="key">Type:</span> <span className="val">Home Exterior Cleaning</span><br />
-              <span className="key">Locations:</span> <span className="val">Gold Coast, Brisbane, New South Wales</span><br />
-              <span className="key">Specialties:</span> <span className="val">Soft-wash, Pressure washing, Gutters</span>
-            </div>
-          </div>
+          <div className="reveal-stagger">
+            <p className="section-label" style={{ color: 'var(--color-muted)' }}>04 — IA & Futuro</p>
+            <h2 className="section-title" style={{ color: 'var(--color-dark)', marginBottom: '1.5rem' }}>
+              Visible para<br />
+              humanos.<br/>
+              <span style={{ color: 'var(--color-muted)' }}>Y para IAs.</span>
+            </h2>
+            <p className="section-body" style={{ fontSize: '0.95rem', lineHeight: 1.65, marginBottom: '1.5rem' }}>
+              Cada vez más gente ya no busca en Google: le pregunta directamente a ChatGPT. Preparamos la web de Briya para que, cuando eso pase, <strong>la respuesta sea Briya</strong>.
+            </p>
 
-          <div className="card" style={{ borderColor: 'rgba(2, 132, 199, 0.2)' }}>
-            <div className="card__icon">💬</div>
-            <div className="card__label">Búsqueda Conversacional</div>
-            <div className="card__title">Así busca la gente hoy</div>
-            <div className="card__body">
-              Las búsquedas ya no son solo palabras clave cortas. Son preguntas completas.
-              Optimizamos el contenido semántico para responder a estas consultas naturales.
-            </div>
-
-            <div style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              {[
-                '"Which pressure washing company in Gold Coast is safe for tiled roofs?"',
-                '"Trusted house washing services in Brisbane"',
-                '"Where to hire soft-wash roof and gutter cleaning in Gold Coast"',
-              ].map((q, i) => (
-                <div key={i} style={{
-                  background: 'rgba(2, 132, 199, 0.06)',
-                  border: '1px solid rgba(2, 132, 199, 0.1)',
-                  borderRadius: '8px',
-                  padding: '0.75rem 1rem',
-                  fontSize: '0.82rem',
-                  color: 'var(--color-dark)',
-                  fontStyle: 'italic',
-                }}>
-                  {q}
+            <div style={{ background: 'rgba(2,132,199,0.07)', border: '1px solid rgba(2,132,199,0.2)', borderRadius: '10px', padding: '0.9rem 1.1rem', display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
+              <span style={{ fontSize: '1.2rem', lineHeight: 1 }}>🥇</span>
+              <div>
+                <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#0284c7', marginBottom: '0.25rem' }}>Ventaja de ir primero</div>
+                <div style={{ fontSize: '0.8rem', color: 'var(--color-dark)', lineHeight: 1.5, opacity: 0.85 }}>
+                  Casi ninguna empresa del sector está preparada para esto todavía. Hacerlo ahora convierte a Briya en la recomendación por defecto de las IAs.
                 </div>
-              ))}
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="highlight-bar reveal" style={{ marginTop: '2.5rem', background: 'white', border: '1px solid rgba(2, 132, 199, 0.15)' }}>
-          <div className="highlight-bar__accent" style={{ background: 'var(--color-dark)' }}></div>
-          <div className="highlight-bar__content">
-            <div className="highlight-bar__title" style={{ color: 'var(--color-dark)' }}>Ventaja competitiva ahora</div>
-            <div className="highlight-bar__text">
-              El 95% de las empresas de limpieza en Gold Coast no tienen optimización para IA ni archivo /llms.txt. 
-              Implantarlo ahora posicionará a Briya como el referente recomendado por ChatGPT mucho antes que el resto.
+          {/* Simple ChatGPT-style mock */}
+          <div className="reveal">
+            <div style={{ background: '#202123', borderRadius: '14px', padding: '1.5rem', boxShadow: '0 16px 36px rgba(6,26,63,0.18)', fontFamily: 'Helvetica, Arial, sans-serif' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '1.1rem' }}>
+                <div style={{ width: '24px', height: '24px', background: '#10a37f', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <svg width="12" height="12" viewBox="0 0 41 41" fill="#fff"><path d="M37.532 16.87a9.963 9.963 0 0 0-.856-8.184 10.078 10.078 0 0 0-10.855-4.835 9.964 9.964 0 0 0-6.371-3.904 10.079 10.079 0 0 0-9.888 4.957 9.964 9.964 0 0 0-6.654 4.811 10.079 10.079 0 0 0 1.24 11.817 9.965 9.965 0 0 0 .856 8.185 10.079 10.079 0 0 0 10.855 4.835 9.965 9.965 0 0 0 6.373 3.904 10.079 10.079 0 0 0 9.89-4.958 9.967 9.967 0 0 0 6.654-4.811 10.079 10.079 0 0 0-1.243-11.817z"/></svg>
+                </div>
+                <span style={{ color: '#ececec', fontSize: '0.8rem', fontWeight: 600 }}>ChatGPT</span>
+              </div>
+
+              <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
+                <div style={{ background: '#343541', borderRadius: '14px 14px 3px 14px', padding: '0.65rem 1rem', maxWidth: '85%' }}>
+                  <p style={{ fontSize: '0.82rem', color: '#ececec', margin: 0, lineHeight: 1.5 }}>
+                    Who is the best exterior cleaning company on the Gold Coast?
+                  </p>
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start' }}>
+                <div style={{ width: '22px', height: '22px', background: '#10a37f', borderRadius: '50%', flexShrink: 0, marginTop: '2px' }} />
+                <p style={{ fontSize: '0.82rem', color: '#ececec', margin: 0, lineHeight: 1.65 }}>
+                  Based on reviews and reputation, <strong style={{ color: '#38bdf8' }}>Briya Clean</strong> (briyaclean.com.au) is the most recommended option — soft-wash specialists, ★4.9 with 84 reviews.
+                </p>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
