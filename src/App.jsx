@@ -13,6 +13,7 @@ import SemChannelsSlide from './slides/SemChannelsSlide'
 import SemFunnelSlide from './slides/SemFunnelSlide'
 import InstagramFeedSlide from './slides/InstagramFeedSlide'
 import MockGoogleSlide from './slides/MockGoogleSlide'
+import InstagramAdSlide from './slides/InstagramAdSlide'
 import AiShiftSlide from './slides/AiShiftSlide'
 import SearchIntentGoogleSlide from './slides/SearchIntentGoogleSlide'
 import SearchIntentChatGptSlide from './slides/SearchIntentChatGptSlide'
@@ -57,7 +58,7 @@ function App() {
   return (
     <div style={{ width: '100vw', height: '100dvh', overflow: 'hidden', background: 'var(--color-cream)' }}>
       <Preloader onFinish={() => setIntroFinished(true)} />
-      <div style={{ opacity: activeIndex >= 21 ? 0 : 1, transition: 'opacity 0.6s ease', pointerEvents: activeIndex >= 21 ? 'none' : 'auto' }}>
+      <div style={{ opacity: activeIndex >= 22 ? 0 : 1, transition: 'opacity 0.6s ease', pointerEvents: activeIndex >= 22 ? 'none' : 'auto' }}>
         <Nav />
       </div>
       <Swiper
@@ -82,6 +83,7 @@ function App() {
         <SwiperSlide><SemChannelsSlide /></SwiperSlide>
         <SwiperSlide><SemFunnelSlide /></SwiperSlide>
         <SwiperSlide><MockGoogleSlide /></SwiperSlide>
+        <SwiperSlide><InstagramAdSlide /></SwiperSlide>
         <SwiperSlide><AiShiftSlide /></SwiperSlide>
         <SwiperSlide><SearchIntentGoogleSlide /></SwiperSlide>
         <SwiperSlide><SearchIntentChatGptSlide /></SwiperSlide>
