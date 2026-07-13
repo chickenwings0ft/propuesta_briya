@@ -66,9 +66,9 @@ export default function Preloader({ onFinish }) {
     >
       <img
         ref={logoRef}
-        src="./logo-original.png"
+        src="./logo-principal.png"
         alt="Briya"
-        style={{ width: '250px', objectFit: 'contain', filter: 'brightness(0) invert(1)' }}
+        style={{ width: '220px', objectFit: 'contain' }}
       />
     </div>
   )
