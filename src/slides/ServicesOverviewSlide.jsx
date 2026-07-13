@@ -12,7 +12,7 @@ const SERVICES = [
   {
     num: '02',
     name: 'SEM',
-    tagline: 'Publicidad de Pago',
+    tagline: 'Publicidad de Pago (Google, Facebook e Instagram)',
     desc: 'Campañas gestionadas en Google Ads y Meta Ads para captar presupuestos desde el primer día, mientras el SEO madura.',
     items: ['Google Ads: búsqueda de alta intención', 'Meta Ads: Instagram + Facebook', 'Optimización semanal del presupuesto'],
     result: 'Leads inmediatos y medibles',

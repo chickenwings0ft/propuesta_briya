@@ -4,7 +4,7 @@ export default function SemChannelsSlide() {
       <div className="container" style={{ maxWidth: '1250px' }}>
 
         <div className="reveal-stagger" style={{ marginBottom: '2rem', textAlign: 'center' }}>
-          <p className="section-label">2. SEM</p>
+          <p className="section-label">2. SEM (Google, Facebook e Instagram)</p>
           <h2 className="section-title" style={{ marginBottom: '0.75rem', lineHeight: 1.05, fontSize: 'clamp(1.8rem, 3.5vw, 3rem)' }}>
             Google Ads y<br />
             <span style={{ color: 'var(--color-green)' }}>Meta Ads.</span>

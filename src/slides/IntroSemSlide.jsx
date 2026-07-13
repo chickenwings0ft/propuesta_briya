@@ -5,7 +5,7 @@ export default function IntroSemSlide() {
         <div className="two-col" style={{ gap: '4rem', alignItems: 'center' }}>
           
           <div className="reveal-stagger">
-            <p className="section-label">2. SEM</p>
+            <p className="section-label">2. SEM (Google, Facebook e Instagram)</p>
             <h2 className="section-title" style={{ marginBottom: '1.5rem', lineHeight: 1.1 }}>
               ¿Qué es el SEM?
             </h2>
