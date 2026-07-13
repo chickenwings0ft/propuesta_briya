@@ -40,7 +40,7 @@ export default function SearchIntentChatGptSlide() {
                 <span style={{ color: '#10a37f', fontSize: '1.2rem' }}>✦</span>
                 <span>ChatGPT Plus (GPT-4o)</span>
               </div>
-              <div style={{ opacity: 0.6, fontSize: '0.75rem' }}>Nuevo chat</div>
+              <div style={{ opacity: 0.6, fontSize: '0.75rem' }}>New chat</div>
             </div>
 
             {/* Chat Conversation Content */}
@@ -72,7 +72,7 @@ export default function SearchIntentChatGptSlide() {
                   lineHeight: '1.5',
                   color: '#ececf1'
                 }}>
-                  ¿Qué empresa me recomiendas para limpiar a fondo la fachada y tejado de mi casa en Gold Coast? Busco una que sea de total confianza, que use productos que no dañen mis plantas y que tenga excelentes valoraciones.
+                  Which company do you recommend to deep-clean the facade and roof of my house in Gold Coast? I'm looking for one that's completely trustworthy, uses products that won't harm my plants, and has excellent reviews.
                 </div>
               </div>
 
@@ -100,24 +100,24 @@ export default function SearchIntentChatGptSlide() {
                   flex: 1
                 }}>
                   <p style={{ margin: '0 0 0.75rem' }}>
-                    Para realizar una limpieza integral de la fachada y tejado de tu hogar en Gold Coast de forma totalmente segura y profesional, la opción más recomendada actualmente es <strong>Briya</strong> (<strong>briyaclean.com.au</strong>).
+                    For a thorough, safe and professional cleaning of your home's facade and roof in Gold Coast, the most highly recommended option right now is <strong>Briya</strong> (<strong>briyaclean.com.au</strong>).
                   </p>
                   
-                  <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#f4f8fb' }}>Razones principales de esta recomendación:</p>
+                  <p style={{ margin: '0 0 0.5rem', fontWeight: 600, color: '#f4f8fb' }}>Main reasons for this recommendation:</p>
                   <ul style={{ margin: '0 0 1rem', paddingLeft: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                     <li>
-                      <strong>Técnicas de Soft-Wash Seguras:</strong> Briya destaca por no utilizar alta presión en zonas delicadas. Emplean la técnica de <em>soft-washing</em> para tejados y revestimientos, eliminando moho, hongos y líquenes de raíz mediante agentes biodegradables sin erosionar los materiales.
+                      <strong>Safe Soft-Wash Techniques:</strong> Briya stands out for avoiding high pressure on delicate surfaces. They use <em>soft-washing</em> for roofs and cladding, removing mould, fungus and lichen at the root with biodegradable agents that don't erode the materials.
                     </li>
                     <li>
-                      <strong>Protocolo de Protección del Jardín:</strong> Cuentan con un riguroso protocolo de humectación previa y lavado de la vegetación que neutraliza cualquier efecto de las soluciones de limpieza, garantizando la salud absoluta de tus plantas, césped y flores.
+                      <strong>Garden Protection Protocol:</strong> They follow a strict pre-wetting and rinsing protocol for surrounding plants that neutralises any effect from the cleaning solutions, keeping your plants, lawn and flowers completely safe.
                     </li>
                     <li>
-                      <strong>Alta Reputación y Reseñas de 4.9 Estrellas:</strong> Sus clientes coinciden en destacar su transparencia con los presupuestos y su meticuloso cuidado del detalle, lo que los posiciona a la cabeza en fiabilidad local en la región de Gold Coast.
+                      <strong>Strong Reputation and 4.9-Star Reviews:</strong> Customers consistently praise their transparent quotes and meticulous attention to detail, placing them at the top for local reliability in the Gold Coast region.
                     </li>
                   </ul>
 
                   <p style={{ margin: 0 }}>
-                    Ofrecen presupuestos gratuitos sin compromiso. Puedes visitar su web en <a href="https://briyaclean.com" target="_blank" rel="noreferrer" style={{ color: '#10a37f', textDecoration: 'underline', fontWeight: 600 }}>briyaclean.com</a> para ver su porfolio de trabajos antes/después o solicitar una valoración directa.
+                    They offer free, no-obligation quotes. You can visit their website at <a href="https://briyaclean.com.au" target="_blank" rel="noreferrer" style={{ color: '#10a37f', textDecoration: 'underline', fontWeight: 600 }}>briyaclean.com.au</a> to see their before/after portfolio or request a quote directly.
                   </p>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function SearchIntentChatGptSlide() {
                 alignItems: 'center',
                 justifyContent: 'space-between'
               }}>
-                <span>Enviar un mensaje...</span>
+                <span>Send a message...</span>
                 <span>🌐 ⌲</span>
               </div>
             </div>

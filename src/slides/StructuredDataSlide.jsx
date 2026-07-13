@@ -42,7 +42,7 @@ export default function StructuredDataSlide() {
               <div className="snippet-preview__desc">Exterior cleaning services in Gold Coast.</div>
             </div>
 
-            <p className="label" style={{ marginBottom: '1rem', color: 'var(--color-cream)' }}>Con Rich Snippets activos</p>
+            <p className="label" style={{ marginBottom: '1rem', color: 'var(--color-cream)' }}>Tras optimización web</p>
             <div className="snippet-preview">
               <div className="snippet-preview__url">briyaclean.com.au › gold-coast</div>
               <div className="snippet-preview__title">Briya — Trusted Exterior Cleaning in Gold Coast</div>

@@ -40,7 +40,7 @@ export default function LocalSeoSlide() {
                 <div className="step__num" style={{ background: 'var(--color-dark)', color: 'var(--color-cream)' }}>02</div>
                 <div className="step__content">
                   <h3 className="step__title" style={{ color: 'var(--color-dark)' }}>Más reseñas, mejores respuestas</h3>
-                  <p className="step__body" style={{ color: 'rgba(13, 31, 45, 0.8)' }}>Tras cada trabajo, el cliente recibe un enlace para dejar su reseña en un clic. Y respondemos todas: rápido y bien.</p>
+                  <p className="step__body" style={{ color: 'rgba(13, 31, 45, 0.8)' }}>Tras cada trabajo, el cliente recibe un enlace para dejar su reseña en un clic. Nos encargamos de responder todas las reseñas en <strong>menos de 24 horas</strong>: Google premia esa rapidez con mejor posicionamiento.</p>
                 </div>
               </div>
               <div className="step">
