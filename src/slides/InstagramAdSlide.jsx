@@ -101,11 +101,12 @@ export default function InstagramAdSlide() {
 
           {/* ── REEL ── */}
           <div style={{
-            width: '220px',
-            aspectRatio: '9 / 16',
-            borderRadius: '20px',
+            width: '190px',
+            aspectRatio: '9 / 19.5',
+            borderRadius: '24px',
             overflow: 'hidden',
             position: 'relative',
+            background: '#000',
             boxShadow: '0 16px 40px rgba(6,26,63,0.18)',
             fontFamily: 'Helvetica, Arial, sans-serif',
             opacity: inView ? 1 : 0,
@@ -115,7 +116,7 @@ export default function InstagramAdSlide() {
             <img
               src="/instagram-post-solar.png"
               alt="Briya — Solar panel before/after cleaning reel"
-              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+              style={{ position: 'absolute', top: '50%', left: 0, width: '100%', transform: 'translateY(-50%)', objectFit: 'contain' }}
             />
             {/* Top scrim */}
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '30%', background: 'linear-gradient(180deg, rgba(0,0,0,0.55), transparent)' }} />
