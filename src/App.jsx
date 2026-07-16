@@ -67,6 +67,8 @@ function App() {
         allowSlidePrev={introFinished}
         direction="horizontal"
         slidesPerView={1}
+        touchAngle={70}
+        threshold={5}
         mousewheel={{ forceToAxis: true, sensitivity: 1 }}
         keyboard={{ enabled: true }}
         pagination={{ clickable: true }}
