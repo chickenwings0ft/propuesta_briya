@@ -34,7 +34,6 @@ export default function PricingSlide() {
       id="pricing-briya"
       style={{
         position: 'relative',
-        overflow: 'hidden',
         padding: 0,
         background: 'var(--color-dark)',
         color: 'var(--color-cream)'
@@ -42,14 +41,12 @@ export default function PricingSlide() {
     >
       <div
         style={{
-          position: 'absolute',
-          inset: 0,
+          width: '100%',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          zIndex: 10,
-          padding: '2rem'
+          padding: '2rem 2rem 3rem'
         }}
       >
         <span className="reveal" style={{ fontSize: '0.85rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--color-floral)', marginBottom: '1rem' }}>
