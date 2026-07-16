@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Mousewheel, Keyboard, Pagination } from 'swiper/modules'
 import 'swiper/css'
@@ -52,6 +52,17 @@ function App() {
     }, 100)
   }
 
+  // Pasar `introFinished` como prop reactiva no siempre re-sincroniza los flags internos
+  // de Swiper (allowTouchMove/allowSlideNext/allowSlidePrev se comprueban en tiempo real
+  // en cada touch). Los forzamos aquí directamente sobre la instancia para garantizar
+  // que el swipe quede realmente habilitado en cuanto termina la intro.
+  useEffect(() => {
+    if (!swiperInstance) return
+    swiperInstance.allowTouchMove = introFinished
+    swiperInstance.allowSlideNext = introFinished
+    swiperInstance.allowSlidePrev = introFinished
+  }, [introFinished, swiperInstance])
+
   // Móvil: un toque simple (sin arrastrar) avanza a la siguiente diapositiva,
   // además del swipe. Se distingue de un swipe/scroll por el desplazamiento mínimo del dedo.
   const handleTouchStart = (e) => {
@@ -66,7 +77,7 @@ function App() {
     const dx = Math.abs(t.clientX - touchStartRef.current.x)
     const dy = Math.abs(t.clientY - touchStartRef.current.y)
     const dt = Date.now() - touchStartRef.current.time
-    if (dx < 10 && dy < 10 && dt < 500) {
+    if (dx < 15 && dy < 15 && dt < 600) {
       swiperInstance.slideNext()
     }
   }
