@@ -14,10 +14,10 @@ export default function OptimizationSlide() {
     <section className="section section--dark" id="optimization" style={{ overflow: 'hidden' }}>
       <div className="container" style={{ maxWidth: '1200px' }}>
         <p className="section-label reveal">05 — Investigación Estratégica</p>
-        <div style={{ display: 'flex', gap: '3rem', alignItems: 'center' }}>
+        <div className="opt-layout" style={{ display: 'flex', gap: '3rem', alignItems: 'center' }}>
           
           {/* Header Column */}
-          <div style={{ flex: '0 0 35%' }}>
+          <div className="opt-header-col" style={{ flex: '0 0 35%' }}>
             <h2 className="section-title reveal" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', lineHeight: 1.1 }}>
               No es saber,<br />
               <span style={{ color: 'var(--color-muted)' }}>es investigar.</span>
@@ -32,7 +32,7 @@ export default function OptimizationSlide() {
           </div>
 
           {/* Table Column */}
-          <div style={{ flex: '1', minWidth: 0 }}>
+          <div className="opt-table-col" style={{ flex: '1', minWidth: 0 }}>
             <div className="reveal" style={{ 
               background: '#111110', 
               borderRadius: '12px', 
@@ -61,7 +61,7 @@ export default function OptimizationSlide() {
 
               {/* Table Content */}
               <div style={{ padding: '0 1rem 1rem' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.82rem' }}>
+                <table className="kw-table" style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', fontSize: '0.82rem' }}>
                   <thead>
                     <tr>
                       <th style={{ padding: '1.2rem 0.5rem 0.8rem', color: '#71717a', fontWeight: 600, borderBottom: '1px solid rgba(255,255,255,0.06)' }}>Palabra Clave</th>
@@ -76,8 +76,8 @@ export default function OptimizationSlide() {
                     {KWS.map((k, i) => (
                       <tr key={i} style={{ transition: 'background 0.2s', borderBottom: i !== KWS.length - 1 ? '1px solid rgba(255,255,255,0.03)' : 'none' }}>
                         <td style={{ padding: '0.8rem 0.5rem', color: '#e4e4e7', fontWeight: 500 }}>{k.kw}</td>
-                        <td style={{ padding: '0.8rem 0.5rem', color: '#a1a1aa' }}>{k.vol}</td>
-                        <td style={{ padding: '0.8rem 0.5rem' }}>
+                        <td data-label="Volumen" style={{ padding: '0.8rem 0.5rem', color: '#a1a1aa' }}>{k.vol}</td>
+                        <td data-label="KD %" style={{ padding: '0.8rem 0.5rem' }}>
                           <span style={{ 
                             display: 'inline-block',
                             width: '24px', height: '24px', 
@@ -89,9 +89,9 @@ export default function OptimizationSlide() {
                             fontWeight: 700
                           }}>{k.kd}</span>
                         </td>
-                        <td style={{ padding: '0.8rem 0.5rem', color: '#a1a1aa' }}>{k.cpc}</td>
-                        <td style={{ padding: '0.8rem 0.5rem', color: k.pos === '#8' || k.pos === '#11' || k.pos === '#15' ? 'var(--color-floral)' : '#a1a1aa', fontWeight: k.pos.includes('8') ? 700 : 400 }}>{k.pos}</td>
-                        <td style={{ padding: '0.8rem 0.5rem', color: k.ai === 'Muy Alta' || k.ai === 'Alta' ? '#e4e4e7' : '#71717a', fontWeight: k.ai.includes('Alta') ? 600 : 400 }}>{k.ai}</td>
+                        <td data-label="CPC" style={{ padding: '0.8rem 0.5rem', color: '#a1a1aa' }}>{k.cpc}</td>
+                        <td data-label="Posición" style={{ padding: '0.8rem 0.5rem', color: k.pos === '#8' || k.pos === '#11' || k.pos === '#15' ? 'var(--color-floral)' : '#a1a1aa', fontWeight: k.pos.includes('8') ? 700 : 400 }}>{k.pos}</td>
+                        <td data-label="Mención IA" style={{ padding: '0.8rem 0.5rem', color: k.ai === 'Muy Alta' || k.ai === 'Alta' ? '#e4e4e7' : '#71717a', fontWeight: k.ai.includes('Alta') ? 600 : 400 }}>{k.ai}</td>
                       </tr>
                     ))}
                   </tbody>

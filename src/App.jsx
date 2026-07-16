@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Mousewheel, Keyboard, Pagination } from 'swiper/modules'
 import 'swiper/css'
@@ -33,11 +33,10 @@ import Preloader from './components/Preloader'
 import { prepareSlideAnimations, animateSlideIn } from './animations'
 
 function App() {
-  const [, setSwiperInstance] = useState(null)
+  const [swiperInstance, setSwiperInstance] = useState(null)
   const [introFinished, setIntroFinished] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
-
-
+  const touchStartRef = useRef({ x: 0, y: 0, time: 0 })
 
   const handleSlideChange = (swiper) => {
     setActiveIndex(swiper.activeIndex)
@@ -53,10 +52,31 @@ function App() {
     }, 100)
   }
 
+  // Móvil: un toque simple (sin arrastrar) avanza a la siguiente diapositiva,
+  // además del swipe. Se distingue de un swipe/scroll por el desplazamiento mínimo del dedo.
+  const handleTouchStart = (e) => {
+    const t = e.touches[0]
+    touchStartRef.current = { x: t.clientX, y: t.clientY, time: Date.now() }
+  }
 
+  const handleTouchEnd = (e) => {
+    if (!introFinished || !swiperInstance) return
+    if (e.target.closest && e.target.closest('button, a, .swiper-pagination, [data-no-advance]')) return
+    const t = e.changedTouches[0]
+    const dx = Math.abs(t.clientX - touchStartRef.current.x)
+    const dy = Math.abs(t.clientY - touchStartRef.current.y)
+    const dt = Date.now() - touchStartRef.current.time
+    if (dx < 10 && dy < 10 && dt < 500) {
+      swiperInstance.slideNext()
+    }
+  }
 
   return (
-    <div style={{ width: '100vw', height: '100dvh', overflow: 'hidden', background: 'var(--color-cream)' }}>
+    <div
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      style={{ width: '100vw', height: '100dvh', overflow: 'hidden', background: 'var(--color-cream)' }}
+    >
       <Preloader onFinish={() => setIntroFinished(true)} />
       <div style={{ opacity: activeIndex >= 22 ? 0 : 1, transition: 'opacity 0.6s ease', pointerEvents: activeIndex >= 22 ? 'none' : 'auto' }}>
         <Nav />

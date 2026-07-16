@@ -588,6 +588,49 @@ p { line-height: 1.65; }
 
   .funnel-arrow { display: none !important; }
 
+  /* Optimization slide: stack header + keyword table instead of squeezing them side by side */
+  .opt-layout { flex-direction: column !important; gap: 1.5rem !important; }
+  .opt-header-col { flex: 1 1 auto !important; width: 100% !important; }
+  .opt-table-col { width: 100% !important; }
+
+  /* Responsive tables: turn into stacked label/value cards instead of squeezing columns */
+  .paradigm-table thead,
+  .kw-table thead {
+    display: none !important;
+  }
+  .paradigm-table, .paradigm-table tbody, .paradigm-table tr, .paradigm-table td,
+  .kw-table, .kw-table tbody, .kw-table tr, .kw-table td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .paradigm-table tr, .kw-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .paradigm-table tr:last-child, .kw-table tr:last-child { margin-bottom: 0; }
+  .paradigm-table td, .kw-table td {
+    border-bottom: none !important;
+    padding: 0.6rem 1rem !important;
+  }
+  .paradigm-table td:first-child, .kw-table td:first-child {
+    background: var(--color-dark);
+    color: var(--color-cream) !important;
+    font-weight: 800 !important;
+  }
+  .paradigm-table td:not(:first-child)::before,
+  .kw-table td:not(:first-child)::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-muted);
+    margin-bottom: 0.25rem;
+  }
+
   .audit-grid { grid-template-columns: 1fr !important; }
 
   /* Action Plan cinematic slide: stack Google/ChatGPT halves instead of side-by-side */

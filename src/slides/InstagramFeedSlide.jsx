@@ -163,6 +163,7 @@ export default function InstagramFeedSlide() {
                 <div style={{ padding: '0.45rem 0.75rem 0.7rem' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.7rem', marginBottom: '0.3rem', fontSize: '0.9rem' }}>
                     <span
+                      data-no-advance="true"
                       onClick={() => setLiked(!liked)}
                       style={{ cursor: 'pointer', color: liked ? '#ed4956' : '#050505', transition: 'transform 0.2s ease, color 0.2s ease', transform: liked ? 'scale(1.2)' : 'scale(1)', display: 'inline-block' }}
                     >

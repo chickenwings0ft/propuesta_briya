@@ -84,6 +84,7 @@ export default function InstagramAdSlide() {
             {/* Action icons */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.9rem', padding: '0.55rem 0.85rem 0.2rem' }}>
               <span
+                data-no-advance="true"
                 onClick={() => setLiked(!liked)}
                 style={{ fontSize: '1.1rem', cursor: 'pointer', color: liked ? '#ed4956' : '#050505', transition: 'transform 0.2s ease, color 0.2s ease', transform: liked ? 'scale(1.15)' : 'scale(1)', display: 'inline-block' }}
               >
@@ -135,6 +136,7 @@ export default function InstagramAdSlide() {
             {/* Right side icons */}
             <div style={{ position: 'absolute', right: '0.5rem', bottom: '3.6rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' }}>
               <span
+                data-no-advance="true"
                 onClick={() => setLiked(!liked)}
                 style={{ fontSize: '1.55rem', cursor: 'pointer', color: liked ? '#ed4956' : '#fff', transform: liked ? 'scale(1.15)' : 'scale(1)', transition: 'transform 0.2s ease, color 0.2s ease' }}
               >
