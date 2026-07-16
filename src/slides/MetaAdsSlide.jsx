@@ -54,7 +54,7 @@ export default function MetaAdsSlide() {
         </div>
 
         {/* Objectives — 4 columns */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.85rem', marginBottom: '1.25rem' }}>
+        <div className="objectives-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.85rem', marginBottom: '1.25rem' }}>
           {OBJECTIVES.map((o, i) => (
             <div
               key={i}

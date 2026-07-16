@@ -542,46 +542,89 @@ p { line-height: 1.65; }
 @media (max-width: 900px) {
   /* Allow slides to scroll vertically on mobile if content overflows */
   .swiper-slide {
-    overflow-y: auto;
-    align-items: flex-start;
+    overflow-y: auto !important;
+    align-items: flex-start !important;
     -webkit-overflow-scrolling: touch;
   }
-  
-  /* Reset fixed 100vh constraint for sections & hero to adapt to dynamic viewport */
+
+  /* Reset fixed 100vh/height constraints for sections & hero to adapt to dynamic viewport.
+     !important is required because many slides set height/minHeight via inline style,
+     which otherwise always wins over an external stylesheet rule. */
   .section, .hero, .closing {
-    height: auto;
-    min-height: 100dvh;
-    padding: 6rem 1.5rem 3.5rem;
-    justify-content: flex-start;
+    height: auto !important;
+    min-height: 100dvh !important;
+    padding: 6rem 1.5rem 3.5rem !important;
+    justify-content: flex-start !important;
   }
 
+  /* Action Plan cinematic slide: keep its full-bleed layout, just use dynamic viewport height */
+  .action-plan-section { min-height: 100dvh !important; }
+
   .nav { padding: 0.5rem; }
-  
+
   /* Collapse grids */
-  .two-col, .two-col--60-40, .two-col--40-60 { grid-template-columns: 1fr; gap: 1.5rem; }
+  .two-col, .two-col--60-40, .two-col--40-60 { grid-template-columns: 1fr !important; gap: 1.5rem !important; }
   .comparison { grid-template-columns: 1fr; }
   .card-grid--2, .card-grid--3, .card-grid--4 { grid-template-columns: 1fr; }
   .metric-grid { grid-template-columns: repeat(2, 1fr); }
 
+  /* Slide-specific multi-column layouts collapsing to a single column */
+  .services-grid,
+  .sem-cards-grid,
+  .analytics-grid,
+  .ig-explain-grid,
+  .calendar-main-grid,
+  .pricing-packs-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .funnel-grid,
+  .objectives-grid,
+  .calendar-posts-grid,
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .funnel-arrow { display: none !important; }
+
+  .audit-grid { grid-template-columns: 1fr !important; }
+
+  /* Action Plan cinematic slide: stack Google/ChatGPT halves instead of side-by-side */
+  .action-plan-split { flex-direction: column !important; }
+
   /* Typography fixes for smaller width */
   .hero__title { font-size: clamp(2.2rem, 8vw, 3rem); line-height: 1.1; margin-top: 1rem; }
   .hero__bg-text { font-size: clamp(3.5rem, 15vw, 6rem); top: 10%; }
-  
+
   .section-title { font-size: clamp(1.6rem, 7vw, 2.2rem); margin-bottom: 1rem; }
   .section-body { font-size: 0.85rem; max-width: 100%; margin-bottom: 1rem; }
-  
+
   /* Components sizing */
   .step { gap: 0.75rem; padding: 0.75rem 0; }
   .step:hover { padding-left: 0; } /* disable hover effect shift on mobile */
   .card { padding: 1.25rem; }
   .code-block { font-size: 0.7rem; padding: 0.75rem; }
   .snippet-preview { padding: 0.75rem; }
-  
+
   /* Swiper UI */
   .swiper-pagination { bottom: 10px !important; }
 }
 
+@media (max-width: 600px) {
+  .ig-posts-grid { grid-template-columns: 1fr !important; }
+}
+
 @media (max-width: 480px) {
   .metric-grid { grid-template-columns: 1fr; }
-  .section, .closing { padding: 5rem 1.25rem 3.5rem; }
+  .section, .closing { padding: 5rem 1.25rem 3.5rem !important; }
+
+  .funnel-grid,
+  .objectives-grid,
+  .calendar-posts-grid,
+  .services-grid,
+  .sem-cards-grid,
+  .pricing-packs-grid {
+    grid-template-columns: 1fr !important;
+  }
 }

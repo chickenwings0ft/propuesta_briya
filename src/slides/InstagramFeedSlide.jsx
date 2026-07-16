@@ -29,7 +29,7 @@ export default function InstagramFeedSlide() {
       style={{ overflow: 'hidden', padding: '3.5rem 2vw 1rem' }}
     >
       <div className="container" style={{ maxWidth: '1250px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '0.85fr 1.15fr', gap: '2.25rem', alignItems: 'center' }}>
+        <div className="ig-explain-grid" style={{ display: 'grid', gridTemplateColumns: '0.85fr 1.15fr', gap: '2.25rem', alignItems: 'center' }}>
 
           {/* LEFT: explanation */}
           <div>
@@ -76,7 +76,7 @@ export default function InstagramFeedSlide() {
             </div>
 
             {/* Two posts side by side */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+            <div className="ig-posts-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
 
               {/* ── POST 1: dark & ugly ── */}
               <div style={{ borderRight: '1px solid rgba(6,26,63,0.08)' }}>

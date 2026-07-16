@@ -60,7 +60,7 @@ export default function PricingSlide() {
         </h2>
 
         {/* Two packs */}
-        <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem', width: '100%', maxWidth: '820px' }}>
+        <div className="reveal pricing-packs-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem', width: '100%', maxWidth: '820px' }}>
           {PACKS.map((pack, i) => (
             <div key={i} style={{
               background: 'rgba(254, 254, 255, 0.03)',

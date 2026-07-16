@@ -34,16 +34,29 @@ export default function Preloader({ onFinish }) {
       if (e.type === 'keydown' && !['ArrowDown', 'ArrowRight', ' ', 'Enter'].includes(e.key)) return;
 
       tl.play();
+      removeListeners();
+    };
+
+    // Móvil/táctil: no hay eventos 'wheel' ni teclado, así que cualquier toque o tap arranca la transición
+    const handleTouch = () => {
+      tl.play();
+      removeListeners();
+    };
+
+    function removeListeners() {
       window.removeEventListener('wheel', handleScroll);
       window.removeEventListener('keydown', handleScroll);
-    };
+      window.removeEventListener('touchstart', handleTouch);
+      window.removeEventListener('click', handleTouch);
+    }
 
     window.addEventListener('wheel', handleScroll);
     window.addEventListener('keydown', handleScroll);
+    window.addEventListener('touchstart', handleTouch);
+    window.addEventListener('click', handleTouch);
 
     return () => {
-      window.removeEventListener('wheel', handleScroll);
-      window.removeEventListener('keydown', handleScroll);
+      removeListeners();
       tl.kill();
     };
   }, [])

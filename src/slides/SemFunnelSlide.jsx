@@ -21,7 +21,7 @@ export default function SemFunnelSlide() {
           </p>
         </div>
 
-        <div className="reveal-stagger" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem' }}>
+        <div className="reveal-stagger funnel-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem' }}>
           {FUNNEL.map((f, i) => (
             <div key={i} style={{ position: 'relative' }}>
               <div style={{ background: 'var(--color-dark)', borderRadius: '14px', padding: '1.5rem 1.25rem', height: '100%', display: 'flex', flexDirection: 'column' }}>
@@ -34,7 +34,7 @@ export default function SemFunnelSlide() {
                 <div style={{ fontSize: '0.78rem', color: '#a1b1bd', lineHeight: 1.5 }}>{f.desc}</div>
               </div>
               {i < FUNNEL.length - 1 && (
-                <div style={{ position: 'absolute', right: '-0.75rem', top: '50%', transform: 'translateY(-50%)', zIndex: 2, fontSize: '1.2rem', fontWeight: 700, color: 'var(--color-muted)' }}>›</div>
+                <div className="funnel-arrow" style={{ position: 'absolute', right: '-0.75rem', top: '50%', transform: 'translateY(-50%)', zIndex: 2, fontSize: '1.2rem', fontWeight: 700, color: 'var(--color-muted)' }}>›</div>
               )}
             </div>
           ))}

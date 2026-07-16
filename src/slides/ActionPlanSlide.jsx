@@ -147,7 +147,7 @@ export default function ActionPlanSlide() {
   }
 
   return (
-    <section ref={sectionRef} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', width: '100%', backgroundColor: 'var(--color-dark)', overflow: 'hidden', position: 'relative' }} id="action-plan-chapter">
+    <section ref={sectionRef} className="action-plan-section" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', width: '100%', backgroundColor: 'var(--color-dark)', overflow: 'hidden', position: 'relative' }} id="action-plan-chapter">
       <style>{`@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }`}</style>
 
       {/* Main scramble text */}
@@ -166,7 +166,7 @@ export default function ActionPlanSlide() {
 
       {/* Vision overlay */}
       {showVision && (
-        <div style={{
+        <div className="action-plan-split" style={{
           position: 'absolute', inset: 0, display: 'flex',
           transform: visionVisible ? 'translateY(0)' : 'translateY(100vh)',
           transition: 'transform 1.4s cubic-bezier(0.87, 0, 0.13, 1)',

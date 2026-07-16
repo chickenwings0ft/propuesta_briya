@@ -14,7 +14,7 @@ export default function SemChannelsSlide() {
           </p>
         </div>
 
-        <div className="reveal-stagger" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
+        <div className="reveal-stagger sem-cards-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.25rem' }}>
 
           {/* Google Ads card */}
           <div style={{ background: 'white', border: '1px solid rgba(6,26,63,0.09)', borderRadius: '14px', padding: '1.6rem', position: 'relative', overflow: 'hidden' }}>

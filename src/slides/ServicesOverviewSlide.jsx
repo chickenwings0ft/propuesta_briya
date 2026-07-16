@@ -47,7 +47,7 @@ export default function ServicesOverviewSlide() {
           </p>
         </div>
 
-        <div className="reveal-stagger" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.1rem' }}>
+        <div className="reveal-stagger services-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.1rem' }}>
           {SERVICES.map((s, i) => (
             <div key={i} style={{ background: 'white', border: '1px solid rgba(6,26,63,0.09)', borderRadius: '16px', padding: '1.6rem 1.4rem', position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: s.color }} />

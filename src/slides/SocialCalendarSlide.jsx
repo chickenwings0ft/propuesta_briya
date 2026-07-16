@@ -81,11 +81,11 @@ export default function SocialCalendarSlide() {
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 280px', gap: '1.5rem', alignItems: 'start' }}>
+        <div className="calendar-main-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 280px', gap: '1.5rem', alignItems: 'start' }}>
 
           {/* Calendar Grid */}
           <div>
-            <div style={{
+            <div className="calendar-posts-grid" style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(4, 1fr)',
               gap: '0.6rem',

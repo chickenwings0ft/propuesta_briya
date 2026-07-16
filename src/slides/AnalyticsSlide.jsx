@@ -75,7 +75,7 @@ export default function AnalyticsSlide() {
           </p>
         </div>
 
-        <div style={{ 
+        <div className="analytics-grid" style={{ 
           display: 'grid', 
           gridTemplateColumns: '1fr 1fr', 
           gap: '2.5rem', 
@@ -90,7 +90,7 @@ export default function AnalyticsSlide() {
               <span style={{ fontSize: '1.1rem', fontWeight: 500, color: '#5f6368', letterSpacing: '-0.3px' }}>Google Analytics 4</span>
             </div>
             
-            <div style={kpiGrid}>
+            <div className="kpi-grid" style={kpiGrid}>
               <div style={kpiBox}>
                 <span style={{ fontSize: '0.75rem', color: '#5f6368', fontWeight: 500 }}>Usuarios</span>
                 <span style={{ fontSize: '1.6rem', color: '#202124', fontWeight: 400 }}>14.8K</span>
@@ -115,7 +115,7 @@ export default function AnalyticsSlide() {
 
             <div style={{ padding: '2rem 1.5rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
               <span style={{ fontSize: '0.85rem', color: '#3c4043', fontWeight: 500, marginBottom: '1.5rem' }}>Tráfico de usuarios por mes</span>
-              <div style={{ flex: 1, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: '4px', height: '100%' }}>
+              <div style={{ flex: 1, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: '4px', height: '100%', minHeight: '160px' }}>
                 {ga4Bars.map((h, i) => (
                   <div key={i} style={{ 
                     flex: 1, 
@@ -151,7 +151,7 @@ export default function AnalyticsSlide() {
               <span style={{ marginLeft: 'auto', fontSize: '0.65rem', fontWeight: 700, color: '#15803d', background: 'rgba(34,197,94,0.1)', padding: '3px 10px', borderRadius: '20px', letterSpacing: '0.05em' }}>3 ACTIVE ADS</span>
             </div>
 
-            <div style={kpiGrid}>
+            <div className="kpi-grid" style={kpiGrid}>
               <div style={{...kpiBox, borderTop: '4px solid #0668E1'}}>
                 <span style={{ fontSize: '0.75rem', color: '#5f6368', fontWeight: 500 }}>Impressions</span>
                 <span style={{ fontSize: '1.6rem', color: '#0668E1', fontWeight: 500 }}>86.4K</span>

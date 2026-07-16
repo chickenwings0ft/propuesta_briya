@@ -75,7 +75,7 @@ export default function AuditSlide() {
           }} />
         </div>
 
-        <div style={{ 
+        <div className="audit-grid" style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
           gap: '1.5rem' 
